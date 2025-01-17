@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggie Restaurant Menu</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .menupage {
+            width: 80%;
+            border-radius: 20px;
+            margin: 10%;
+			margin-top: 5%;
+            padding: 20px;
+        }
+
+        .menuheader {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menuheader {
+            font-size: 30px;
+            color: #b29054;
+            text-transform: uppercase;
+        }
+
+        .menuSection {
+            margin-bottom: 40px;
+        }
+
+        .menuSection h2 {
+            font-size: 36px;
+            color: #b29054;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #b29054;
+            padding-bottom: 5px;
+        }
+
+        .menuItem {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menuItem:last-child {
+            border-bottom: none;
+        }
+
+        .menuItem img {
+            width: 80px;
+            height: 80px;
+			lign:center;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .menuItem .itemName {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menuItem .itemDescription {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .menuItem .itemPrice {
+            font-size: 18px;
+            color: #b29054;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+ <!-- Headings -->
+    <div class="headings">
+        <p>A Website Created by Manit Gupta</p>
+    </div>
+
+    <!-- Top Section -->
+    <div class="top">
+        <header>
+            <img src="logo.jpg" alt="logo">
+            <h1>The Garden <br> Plate</h1>
+        </header>
+        <div class="right-side">
+            <div class="timing">
+				<div class = "together">
+					<img src="timing.png" alt="Timing">
+					<p>09:00 am - 09:00 pm</p>
+				</div>
+                <div class="follow">
+                    <p>Follow us:</p>
+                    <img src="facebook.png" alt="Facebook">
+                    <img src="instagram.png" alt="Instagram">
+                    <img src="linkdin.png" alt="LinkedIn">
+                </div>
+            </div>
+            <nav>
+               <a href = "html.html"> <h3>Home </h3> </a>
+                <a href = "aboutus.html"> <h3>About us  </h3></a>
+               <a href ="menu.html"> <h3>Menu </h3> </a>          
+                <a href = "sustainable.html"><h3>Sustainability </h3> </a>
+				<a href = "contact.html"><h3>Contact us </h3> </a>
+                <a href = "links.html"><h3>Refrences</h3></a>
+               
+            </nav>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+<header class="sticky-header">
+    <div class="logo-section">
+        <img src="logo.jpg" alt="Logo">
+        <h1>The Garden Plate</h1>
+    </div>
+    <div class="nav-section">
+        <a href = "html.html"> <h3>Home </h3> </a>
+                <a href = "aboutus.html"> <h3>About us  </h3></a>
+               <a href ="menu.html"> <h3>Menu </h3> </a>          
+                <a href = "sustainable.html"><h3>Sustainability </h3> </a>
+				 <a href = "contact.html"><h3>Contact us </h3> </a>
+                <a href = "links.html"><h3>Refrences</h3></a>
+               
+    </div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href = "html.html"> <h3>Home </h3> </a>
+        <a href = "html.html"> <h3>Home </h3> </a>
+                <a href = "aboutus.html"> <h3>About us  </h3></a>
+               <a href ="menu.html"> <h3>Menu </h3> </a>          
+                <a href = "sustainable.html"><h3>Sustainability </h3> </a>
+				<a href = "contact.html"><h3>Contact us </h3> </a>
+                <a href = "links.html"<h3>Refrences</h3></a>
+                
+    </div>
+</header>
+
+
+
+<!-- Hero Section -->
+	<section class="sustainable">
+		<div class="abtoverlay"></div>
+		<div class="abtcontent">
+			<h1>Sustainability: A Promise on Every Plate</h1>
+			<p>
+				From ethical sourcing to zero-waste kitchens, every choice we make is a step towards a greener planet.
+			</p>
+			<a href="#menu" class="abtbtn">Sustainability isn’t a trend—it’s our tradition.</a>
+		</div>
+	</section>
+
+
+    <div class="menupage">
+     
+        <div class = "menuheader">
+            <h1>The Garden Table Menu</h1>
+            <p>ALL DISHES ARE VEGETARIAN</p>
+        </div>
+
+        <div class="menuSection">
+            <h2>Appetizers</h2>
+            <div class="menuItem">
+                <img src="pea.png" alt="Chickpea & Spinach Curry">
+                <div>
+                    <div class="itemName">Chickpea & Spinach Curry</div>
+                    <div class="itemDescription">A hearty and flavorful curry made with tender chickpeas, spinach, and aromatic spices.</div>
+                </div>
+                <div class="itemPrice">$14.99</div>
+            </div>
+            <div class="menuItem">
+                <img src="zu.png" alt="Zucchini Noodles with Pesto">
+                <div>
+                    <div class="itemName">Zucchini Noodles with Pesto</div>
+                    <div class="itemDescription">Zucchini noodles tossed in a homemade basil pesto sauce with cherry tomatoes, toasted pine nuts, and Parmesan cheese.</div>
+                </div>
+                <div class="itemPrice">$10.99</div>
+            </div>
+            <div class="menuItem">
+                <img src="tof.png" alt="Tofu & Vegetable Stir-Fry">
+                <div>
+                    <div class="itemName">Tofu & Vegetable Stir-Fry</div>
+                    <div class="itemDescription">Crispy tofu cubes stir-fried with an assortment of fresh vegetables in a savory soy-ginger sauce. Served with steamed jasmine rice.</div>
+                </div>
+                <div class="itemPrice">$12.99</div>
+            </div>
+        </div>
+
+        <div class="menuSection">
+            <h2>Main Courses</h2>
+            <div class="menuItem">
+                <img src="mar.png" alt="Moroccan Vegan Balls">
+                <div>
+                    <div class="itemName">Moroccan Vegan Balls</div>
+                    <div class="itemDescription">Spiced chickpea and lentil balls, infused with cumin, and fresh herbs, served with a zesty tomato sauce.</div>
+                </div>
+                <div class="itemPrice">$11.95</div>
+            </div>
+            <div class="menuItem">
+                <img src="veg.png" alt="Vegetarian Pizza">
+                <div>
+                    <div class="itemName">Vegetarian Pizza</div>
+                    <div class="itemDescription">A crispy crust topped with vibrant vegetables, melted cheese, and a rich tomato sauce.</div>
+                </div>
+                <div class="itemPrice">$12.95</div>
+            </div>
+            <div class="menuItem">
+                <img src="jala.png" alt="Jalapeno Burger">
+                <div>
+                    <div class="itemName">Jalapeno Burger</div>
+                    <div class="itemDescription">A spicy, flavorful veggie patty topped with melted cheese, fresh jalapeÃ±os, and tangy sauce, with a soft bun.</div>
+                </div>
+                <div class="itemPrice">$13.75</div>
+            </div>
+            <div class="menuItem">
+                <img src="bowl.png" alt="Classic Vegetarian Chili">
+                <div>
+                    <div class="itemName">Classic Vegetarian Chili</div>
+                    <div class="itemDescription">A hearty mix of beans, tomatoes, peppers, and spices, simmered to perfection for a rich, savory flavor.</div>
+                </div>
+                <div class="itemPrice">$12.95</div>
+            </div>
+        </div>
+
+        <div class="menuSection">
+            <h2>Desserts</h2>
+            <div class="menuItem">
+                <img src="toff.png" alt="Sticky Toffee Pudding">
+                <div>
+                    <div class="itemName">Sticky Toffee Pudding</div>
+                    <div class="itemDescription">Decadent, rich chocolate cake with a creamy vegan frosting.</div>
+                </div>
+                <div class="itemPrice">$5.95</div>
+            </div>
+            <div class="menuItem">
+                <img src="cake.png" alt="Lemon Cake">
+                <div>
+                    <div class="itemName">Lemon Cake</div>
+                    <div class="itemDescription">A light and fluffy cake with a tangy lemon flavor, topped with a sweet, zesty glaze.</div>
+                </div>
+                <div class="itemPrice">$5.95</div>
+            </div>
+            <div class="menuItem">
+                <img src="sor.png" alt="Fruit Sorbet">
+                <div>
+                    <div class="itemName">Fruit Sorbet</div>
+                    <div class="itemDescription">A dairy-free dessert made from pureed seasonal fruits, offering a light and fruity finish.</div>
+                </div>
+                <div class="itemPrice">$5.49</div>
+            </div>
+        </div>
+
+        <div class="menuSection">
+            <h2>Drinks</h2>
+            <div class="menuItem">
+                <img src="smooth.png" alt="Fruit Smoothie">
+                <div>
+                    <div class="itemName">Fruit Smoothie</div>
+                    <div class="itemDescription">A refreshing drink made with local seasonal fruits, including ripe bananas, berries, and tropical favorites.</div>
+                </div>
+                <div class="itemPrice">$4.99</div>
+            </div>
+            <div class="menuItem">
+                <img src="ss.png" alt="Soda">
+                <div>
+                    <div class="itemName">Soda</div>
+                    <div class="itemDescription">A classic range of sparkling, carbonated beverages to satisfy your thirst. .</div>
+                </div>
+                <div class="itemPrice">$1.99</div>
+            </div>
+            <div class="menuItem">
+                <img src="wine.png" alt="Wine">
+                <div>
+                    <div class="itemName">Wine</div>
+                    <div class="itemDescription">Discover a curated selection of fine wines, each offering a distinct bouquet of flavors.</div>
+                </div>
+                <div class="itemPrice">$6.99</div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+
+<footer class="footer">
+  <div class="footerarea">
+    <div class="footername">
+      <h3>The Garden Plate</h3>
+      <p>Fresh, sustainable, and Tasty! Come now.</p>
+    </div>
+
+    <div class="footerlink">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="html.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+		<li><a href="sustainable.html">Sustainability</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href="links.html">Refrence</a></li>
+      </ul>
+    </div>
+
+    <div class="contactfooter">
+      <h4>Contact Us</h4>
+      <p>Email: THE@thegardenplate.com</p>
+      <p>Phone: +1 (111) 111-111</p>
+    </div>
+  </div>
+
+  <div class="footerdown">
+    <p>Created By Manit Gupta, Brady Merten, & Rajaram Gairaboni</p>
+  </div>
+</footer>
+
+</body>
+</html>
