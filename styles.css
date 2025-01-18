@@ -1,4 +1,4 @@
-/* General Reset */
+
 *,
 *::before,
 *::after {
@@ -6,10 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ================= */
-/* Scroll Animation */
-/* ================= */
 
 .scroll-animation {
     opacity: 0;
@@ -35,7 +31,6 @@ body {
     background-color: #F4F1EA;
 }
 
-/* Headings Section */
 .headings {
     background-color: #262626;
     color: white;
@@ -46,7 +41,6 @@ body {
     font-family: cursive, Lucida Handwriting;
 }
 
-/* Top Section */
 .top {
     display: flex;
     justify-content: space-between;
@@ -57,7 +51,6 @@ body {
 
 }
 
-/* Header Styling */
 header {
     width: 25%;
     display: flex;
@@ -76,12 +69,10 @@ header h1 {
     font-family: cursive, Lucida Handwriting;
 }
 
-/* Right Side */
 .right-side {
     width: 75%;
 }
 
-/* Timing Bar */
 .timing {
     background-color: MediumSeaGreen;
     color: white;
@@ -124,7 +115,6 @@ header h1 {
     max-height: 25px;
 }
 
-/* Navigation Bar */
 nav {
     background-color: #010F1C;
     color: white;
@@ -161,7 +151,6 @@ nav h3:hover {
     text-decoration: underline;
 }
 
-/* Sticky Header */
 .sticky-header {
     position: fixed;
     top: 0;
@@ -204,19 +193,18 @@ nav h3:hover {
 
 .sticky-header .nav-section {
     display: flex;
-    justify-content: space-evenly; /* Ensure equal spacing between items */
-    align-items: center; /* Vertically center items */
-    flex-grow: 1; /* Allow the nav-section to take up available space */
-    margin: 0 20px; /* Add some spacing on the sides */
+    justify-content: space-evenly; 
+    align-items: center; 
+    flex-grow: 1; 
+    margin: 0 20px; 
 }
 
-/* Ensure the h3 elements are styled appropriately */
 .sticky-header .nav-section h3 {
-    margin: 0; /* Remove any default margin */
-    font-size: 1.3rem; /* Adjust font size as needed */
-    font-weight: bold; /* Make it visually clear */
-    cursor: pointer; /* Indicate interactivity */
-    white-space: nowrap; /* Prevent text wrapping */
+    margin: 0; 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    white-space: nowrap; 
 }
 
  a:link {
@@ -231,21 +219,18 @@ nav h3:hover {
 }
 
 
-
-/* Hide Logo on Larger Screens if Hamburger isn't Needed */
 @media (min-width: 769px) {
     .hamburger {
         display: none;
     }
 }
 
-/* Hamburger Icon */
 .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    z-index: 1101; /* Above mobile menu */
+    z-index: 1101; 
 }
 
 .hamburger span {
@@ -255,7 +240,6 @@ nav h3:hover {
     transition: all 0.3s ease-in-out;
 }
 
-/* Mobile Navigation Menu */
 .mobile-nav {
     display: none;
     position: fixed;
@@ -271,12 +255,10 @@ nav h3:hover {
     box-shadow: -2px 0 5px rgba(0,0,0,0.1);
 }
 
-/* Mobile Nav Active State */
 .mobile-nav.active {
     display: flex;
 }
 
-/* Hamburger Icon When Menu is Open */
 .hamburger.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -289,7 +271,6 @@ nav h3:hover {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Adjust Logo Section for Smaller Screens */
 @media (max-width: 768px) {
     .sticky-header .logo-section {
         display: flex;
@@ -308,7 +289,6 @@ nav h3:hover {
 
 
 
-/* Mobile Navigation */
 .mobile-nav {
     display: none;
     position: fixed;
@@ -331,9 +311,6 @@ nav h3:hover {
     display: flex;
 }
 
-/* Responsive Design */
-
-/* Tablets */
 @media (max-width: 768px) {
     .top {
         flex-direction: column;
@@ -381,7 +358,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
     .top {
         padding: 0 2%;
@@ -419,12 +395,6 @@ nav h3:hover {
 }
 
 
-
-/* ================================= */
-/* 📱 RESPONSIVENESS FOR ALL DEVICES */
-/* ================================= */
-
-/* IPad and Tablet Devices (Landscape and Portrait) */
 @media (max-width: 1024px) {
     .top {
         flex-direction: column;
@@ -475,7 +445,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Devices (Phones & Small Tablets) */
 @media (max-width: 768px) {
     .top {
         flex-direction: column;
@@ -522,7 +491,7 @@ nav h3:hover {
     }
 
     nav {
-        display: none; /* Hide default nav on smaller screens */
+        display: none; 
     }
 
     .sticky-header .nav-section {
@@ -541,13 +510,12 @@ nav h3:hover {
         font-size: 1.4rem;
     }
 
-    /* Mobile Navigation Menu Open State */
+  
     .mobile-nav {
         width: 60%;
     }
 }
 
-/* Small Mobile Devices (Phones under 480px) */
 @media (max-width: 480px) {
     .top {
         padding: 0 2%;
@@ -596,18 +564,16 @@ nav h3:hover {
 }
 	
 
-/* Hero Section */
 .hero {
 	position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     display: flex;
-    align-items: center; /* Vertically center */
-    justify-content: center; /* Horizontally center */
+    align-items: center; 
+    justify-content: center; 
     overflow: hidden;
 }
 
-/* Background Image */
 .hero > img {
 	position: absolute;
     top: 50%;
@@ -615,11 +581,10 @@ nav h3:hover {
     transform: translate(-50%, -50%);
     width: 99%;
     height: 100%;
-    object-fit: cover; /* Ensures the image scales correctly */
-    z-index: 0; /* Background stays behind other content */
+    object-fit: cover; 
+    z-index: 0; 
 }
 
-/* Hero Slide areawhy */
 .hero-slide {
     position: absolute;
     top: 0;
@@ -632,24 +597,22 @@ nav h3:hover {
     padding: 0 5%;
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-    z-index: 2; /* Above the background */
+    z-index: 2; 
 }
 
-/* Active Slide */
 .hero-slide.active {
     transform: translateX(-100%);
     opacity: 1;
-    z-index: 3; /* Highest priority when active */
+    z-index: 3; 
 }
 
-/* Hero Text Content */
 .hero-slide .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     max-width: 40%;
-    z-index: 4; /* Above everything */
+    z-index: 4; 
     animation: slideInText 1s ease-in-out forwards;
     position: relative;
 }
@@ -688,14 +651,13 @@ nav h3:hover {
     background: darkred;
 }
 
-/* Hero Image Content */
 .hero-slide .image {
     max-width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 5; /* On top of background */
+    z-index: 5; 
     animation: slideInImage 1.5s ease-in-out forwards;
 }
 
@@ -706,7 +668,6 @@ nav h3:hover {
     animation: fadeInImage 1.5s ease-in-out forwards;
 }
 
-/* Animations */
 @keyframes slideInText {
     from {
         transform: translateX(50%);
@@ -760,9 +721,7 @@ nav h3:hover {
     }
 }
 
-/* RESPONSIVE DESIGN */
 
-/* Tablet */
 @media (max-width: 768px) {
     .hero-slide {
         flex-direction: column;
@@ -787,7 +746,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
     .hero-slide .content h2 {
         font-size: 1.5rem;
@@ -808,25 +766,16 @@ nav h3:hover {
 }
 
 
-
-
-
-/* ================================= */
-/* 📱 HERO SECTION RESPONSIVE DESIGN */
-/* ================================= */
-
-/* General Adjustments for Hero Section */
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-/* Background Image */
 .hero > img {
     position: absolute;
     top: 50%;
@@ -838,7 +787,6 @@ nav h3:hover {
     z-index: 0;
 }
 
-/* Hero Slide areawhy */
 .hero-slide {
     position: absolute;
     top: 0;
@@ -854,14 +802,12 @@ nav h3:hover {
     z-index: 2;
 }
 
-/* Active Slide */
 .hero-slide.active {
     transform: translateX(-100%);
     opacity: 1;
     z-index: 3;
 }
 
-/* Hero Content */
 .hero-slide .content {
     display: flex;
     flex-direction: column;
@@ -908,7 +854,6 @@ nav h3:hover {
     background: darkred;
 }
 
-/* Hero Image Content */
 .hero-slide .image {
     max-width: 50%;
     display: flex;
@@ -926,14 +871,9 @@ nav h3:hover {
     animation: fadeInImage 1.5s ease-in-out forwards;
 }
 
-/* ================================= */
-/* ✅ RESPONSIVENESS */
-/* ================================= */
-
-/* Large Tablets and iPads (Landscape and Portrait) */
 @media (max-width: 1024px) {
     .hero {
-        height: 570px; /* Adjust viewport height */
+        height: 570px; 
     }
 
     .hero-slide {
@@ -965,7 +905,6 @@ nav h3:hover {
     }
 }
 
-/* Tablets (Portrait Mode) */
 @media (max-width: 768px) {
     .hero {
         height: 600px;
@@ -1000,7 +939,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Devices (Phones and Smaller Tablets) */
 @media (max-width: 480px) {
     .hero {
         height: 400px;
@@ -1036,7 +974,6 @@ nav h3:hover {
     }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 360px) {
     .hero {
         height: 50vh;
@@ -1063,10 +1000,6 @@ nav h3:hover {
 
 
 
-
-
-
-/* Title Section */
 .title {
     display: flex;
     justify-content: space-between;
@@ -1112,7 +1045,6 @@ nav h3:hover {
 }
 
 
-/* Menu Section */
 .menu-section {
     display: flex;
     gap: 3%;
@@ -1120,7 +1052,6 @@ nav h3:hover {
     align-items: stretch;
 }
 
-/* Menu Items */
 .menu-items {
     flex: 2;
     display: flex;
@@ -1142,7 +1073,7 @@ nav h3:hover {
 .menu-item img {
     max-width: 35%;
     border-radius: 10px;
-	margin-left: -110px; /* Moves the image outside the box to the left */
+	margin-left: -110px; 
 }
 
 .menu-details h3 {
@@ -1155,7 +1086,6 @@ nav h3:hover {
     color: gold;
 }
 
-/* Menu */
 .opening-times {
     background-color: #F4F1EA;
     border-style: solid;
@@ -1165,7 +1095,6 @@ nav h3:hover {
     overflow: hidden;
 }
 
-/* Inner Mainbox Styling */
 .mainbox {
     background: #00203F;
     color: #fff;
@@ -1173,10 +1102,9 @@ nav h3:hover {
     margin: 10px;
     height: 97%;
     padding: 2%;
-	overflow: hidden; /* Ensure content doesn't overflow */
+	overflow: hidden; 
 }
 
-/* Title Section */
 .mainbox h2 {
     font-size: 25px;
     color: #f4f1ea;
@@ -1190,7 +1118,7 @@ nav h3:hover {
     font-weight: bold;
 }
 
-/* Image Styling */
+
 .mainbox img {
     width: 90%;
     height: 200px;
@@ -1198,7 +1126,7 @@ nav h3:hover {
     border-radius: 10px;
 }
 
-/* Categories areawhy */
+
 .menu-categories {
     display: flex;
     justify-content: space-between;
@@ -1210,7 +1138,6 @@ nav h3:hover {
     padding: 0; 
 }
 
-/* Category Headers */
 .menu-category h3 {
     font-size: 15px;
     color: #d4a46e;
@@ -1219,7 +1146,6 @@ nav h3:hover {
     display: inline-block;
 }
 
-/* Menu Items */
 .menu-category ul {
     list-style: none;
     padding: 0;
@@ -1244,11 +1170,6 @@ nav h3:hover {
     margin-left: 5px;
 }
 
-/* =============================== */
-/* 📱 RESPONSIVENESS */
-/* =============================== */
-
-/* Tablets */
 @media (max-width: 1024px) {
     .opening-times {
         width: 60%;
@@ -1269,9 +1190,38 @@ nav h3:hover {
     .menu-category li {
         font-size: 0.9rem;
     }
+	.title {
+        margin: 40px 5%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .lefttitle {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .lefttitle h2 {
+        font-size: 32px;
+    }
+
+    .lefttitle h1 {
+        font-size: 2rem;
+    }
+
+    .title-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .title-right p {
+        font-size: 15px;
+        text-align: center;
+    }	
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
     .opening-times {
         width: 80%;
@@ -1301,9 +1251,26 @@ nav h3:hover {
     .menu-category li {
         font-size: 0.85rem;
     }
+	
+	  .title {
+        margin: 20px 5%;
+        gap: 20px;
+    }
+
+    .lefttitle h2 {
+        font-size: 28px;
+    }
+
+    .lefttitle h1 {
+        font-size: 1.8rem;
+    }
+
+    .title-right p {
+        font-size: 14px;
+    }
+	 
 }
 
-/* Small Mobile Devices */
 @media (max-width: 480px) {
     .opening-times {
         width: 90%;
@@ -1330,7 +1297,6 @@ nav h3:hover {
     }
 }
 
-/* RESPONSIVENESS */
 @media (max-width: 768px) {
     .menu-section {
         flex-direction: column;
@@ -1362,42 +1328,11 @@ nav h3:hover {
 }
 
 
-/* =============================== */
-/* 📱 RESPONSIVENESS FOR TITLE AND MENU SECTION */
-/* =============================== */
-
-/* General Adjustments for All Devices */
 .title, .menu-section {
     margin: 40px 5%;
     gap: 20px;
 }
 
-/* Title Section Responsive */
-@media (max-width: 1024px) {
-    .title {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .lefttitle, .title-right {
-        width: 100%;
-    }
-
-    .lefttitle h2 {
-        font-size: 32px;
-    }
-
-    .lefttitle h1 {
-        font-size: 2rem;
-    }
-
-    .title-right p {
-        font-size: 14px;
-    }
-}
-
-/* Menu Section Responsive */
 @media (max-width: 1024px) {
     .menu-section {
         flex-direction: column;
@@ -1428,7 +1363,6 @@ nav h3:hover {
     }
 }
 
-/* Veg Menu Section Responsive */
 @media (max-width: 1024px) {
     .opening-times {
         width: 80%;
@@ -1458,7 +1392,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
     .title {
         flex-direction: column;
@@ -1518,7 +1451,6 @@ nav h3:hover {
     }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 480px) {
     .lefttitle h2 {
         font-size: 24px;
@@ -1567,11 +1499,6 @@ nav h3:hover {
 
 
 
-
-
-
-
-/* Features Section */
 .features {
     text-align: center;
     margin: 40px auto;
@@ -1579,7 +1506,6 @@ nav h3:hover {
     width: 90%;
 }
 
-/* Title */
 .titlefeature {
     font-size: 28px; 
     margin-bottom: 30px;
@@ -1588,13 +1514,12 @@ nav h3:hover {
 
 .titlefeature span {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 40px; /* Converted from rem */
+    font-size: 40px; 
     font-style: italic;
     color: #b29054;
 }
 
 
-/* Card areawhy */
 .cards {
     display: flex;
     justify-content: space-between;
@@ -1605,7 +1530,6 @@ nav h3:hover {
     flex-wrap: wrap;
 }
 
-/* Individual Cards */
 .card {
     background: #fff;
     border: 1px solid #ddd;
@@ -1613,7 +1537,7 @@ nav h3:hover {
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%; /* Each card takes 30% width */
+    width: 30%; 
     margin-bottom: 20px;
 }
 
@@ -1628,19 +1552,19 @@ nav h3:hover {
 }
 
 .cardinfo h3 {
-    font-size: 20px; /* Converted from rem */
+    font-size: 20px; 
     font-weight: 700;
     margin-bottom: 5px;
 }
 
 .cardinfo p {
-    font-size: 16px; /* Converted from rem */
+    font-size: 16px; 
     color: #777;
     margin-bottom: 10px;
 }
 
 .cardinfo .description {
-    font-size: 14px; /* Converted from rem */
+    font-size: 14px; 
     margin-bottom: 15px;
     color: #555;
 }
@@ -1648,7 +1572,7 @@ nav h3:hover {
 .morecard {
     background-color: #b29054;
     color: #fff;
-    font-size: 14px; /* Converted from rem */
+    font-size: 14px; 
     font-weight: bold;
     padding: 8px 15px;
     border: none;
@@ -1660,9 +1584,6 @@ nav h3:hover {
     background-color: #8d6f3d;
 }
 
-/* RESPONSIVENESS */
-
-/* Tablets */
 @media (max-width: 1024px) {
     .cards {
         justify-content: center;
@@ -1670,7 +1591,7 @@ nav h3:hover {
     }
 
     .card {
-        width: 45%; /* Adjust card width */
+        width: 45%; 
         margin-bottom: 20px;
     }
 
@@ -1687,7 +1608,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
     .titlefeature {
         font-size: 20px;
@@ -1712,7 +1632,6 @@ nav h3:hover {
     }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 480px) {
     .titlefeature {
         font-size: 18px;
@@ -1737,11 +1656,7 @@ nav h3:hover {
     }
 }
 
-/* ========================== */
-/* 🌟 Parallax Hero Section */
-/* ========================== */
 
-/* Section areawhy */
 .overallspotlight {
     position: relative;
     width: 100%;
@@ -1754,7 +1669,6 @@ nav h3:hover {
     justify-content: center;
 }
 
-/* Permanent Darken Layer */
 .darken {
     position: absolute;
     top: 0;
@@ -1765,7 +1679,6 @@ nav h3:hover {
     z-index: 1;
 }
 
-/* Black Transparent Overlay (Parallax Effect) */
 .ontop {
     position: absolute;
     top: 0;
@@ -1777,7 +1690,6 @@ nav h3:hover {
     z-index: 2;
 }
 
-/* Content Section */
 .content {
     position: relative;
     z-index: 3;
@@ -1806,9 +1718,7 @@ nav h3:hover {
     margin-bottom: 20px;
 }
 
-/* ========================== */
-/* 🌟 Spotlight Section */
-/* ========================== */
+
 
 .title.scroll-animation {
     margin-top: 20px;
@@ -1825,7 +1735,6 @@ nav h3:hover {
 }
 
 
-/* Spotlight areawhy */
 .spotlight {
     display: flex;
     justify-content: center; 
@@ -1861,9 +1770,6 @@ nav h3:hover {
     font-weight: bold;
     margin: 0;
 }
-/* ========================== */
-/* 🌟 Scroll Animation */
-/* ========================== */
 
 .scroll-animation {
     opacity: 0;
@@ -1876,11 +1782,6 @@ nav h3:hover {
     transform: translateY(0);
 }
 
-/* ========================== */
-/* 📱 RESPONSIVENESS */
-/* ========================== */
-
-/* Tablets */
 @media (max-width: 768px) {
     .content h1 {
         font-size: 36px;
@@ -1912,7 +1813,6 @@ nav h3:hover {
 	}
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
     .content h1 {
         font-size: 28px;
@@ -1947,7 +1847,7 @@ nav h3:hover {
     }
 
     .spotlight-item {
-        width: 45%; /* Two items per row on tablets */
+        width: 45%; 
         max-width: 200px;
     }
 
@@ -1963,15 +1863,14 @@ nav h3:hover {
 	}
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
     .spotlight {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         gap: 20px;
     }
 
     .spotlight-item {
-        width: 80%; /* Take up more horizontal space */
+        width: 80%; 
         max-width: 250px;
     }
 
@@ -1984,17 +1883,12 @@ nav h3:hover {
     }
 }
 
-/* Parallax Scroll Effect */
 @media (max-width: 1024px) {
     .ontop {
         background: rgba(0, 0, 0, 0.6);
     }
 }
 
-
-/* ========================== */
-/* 🌟 Testimonials Section */
-/* ========================== */
 
 
 .review {
@@ -2045,9 +1939,9 @@ nav h3:hover {
     position: absolute;
    
 	
-	border: 4px solid #d4a46e; /* Matched to theme accent color */ /* 🆕 */
-    box-shadow: 0 4px 10px rgba(212, 164, 110, 0.4); /* Softer shadow */ /* 🆕 */
-    background: linear-gradient(145deg, #f0e6d6, #e8d8c4); /* Elegant gradient */ /* 🆕 */;
+	border: 4px solid #d4a46e; 
+    box-shadow: 0 4px 10px rgba(212, 164, 110, 0.4); 
+    background: linear-gradient(145deg, #f0e6d6, #e8d8c4); 
 	
 }
 
@@ -2064,10 +1958,10 @@ nav h3:hover {
 
 .circle.focus {
     z-index: 2;
-	transform: scale(1.8); /* Enlarged smoothly */
-    border-color: mediumseagreen; /* Highlighted theme color */
-    box-shadow: 0 12px 25px rgba(108, 99, 255, 0.4); /* Enhanced shadow effect */ /* 🆕 */
-    background: mediumseagreen; /* Gradient for focus */ /* 🆕 */
+	transform: scale(1.8); 
+    border-color: mediumseagreen; 
+    box-shadow: 0 12px 25px rgba(108, 99, 255, 0.4); 
+    background: mediumseagreen; 
 }
 
 .reviewinfo {
@@ -2075,10 +1969,10 @@ nav h3:hover {
     margin-top: 0px;
     position: absolute;
     top: 120%;
-    width: 200%; /* Slightly wider than the circle */
-    max-width: 150px; /* Adjust based on your design preference */
-    overflow-wrap: break-word; /* Ensure text wraps if it overflows */
-    white-space: normal; /* Prevent single-line overflow */
+    width: 200%; 
+    max-width: 150px; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
 	font-family: 'Nunito', sans-serif; 
 }
 
@@ -2088,13 +1982,13 @@ nav h3:hover {
     margin: 5px 0;
     color: #333;
     transition: transform 0.5s ease, color 0.5s ease;
-	font-weight: 700; /* Bold for emphasis */ /* 🆕 */
+	font-weight: 700; 
 }
 
 .circle.focus .reviewinfo h3 {
     font-size: 1.5rem;
     color: black;
-	text-shadow: 1px 1px 5px rgba(108, 99, 255, 0.4); /* Text glow effect */ /* 🆕 */
+	text-shadow: 1px 1px 5px rgba(108, 99, 255, 0.4); 
 }
 
 .reviewinfo p {
@@ -2107,7 +2001,7 @@ nav h3:hover {
 .circle.focus .reviewinfo p {
     font-size: 1.1rem;
     color: #444;
-	font-weight: 500; /* Enhanced weight for clarity */ /* 🆕 */
+	font-weight: 500; 
 }
 
 @keyframes fadeIn {
@@ -2119,44 +2013,40 @@ nav h3:hover {
     }
 }
 
-/* Responsive styles for tablets and phones */
-@media (max-width: 768px) { /* Tablets */
+@media (max-width: 768px) { 
     .transition {
-        overflow: hidden; /* Hide circles outside the visible area */
-        width: 100%; /* Ensure proper centering */
+        overflow: hidden; 
+        width: 100%; 
     }
     .circle {
-        position: absolute; /* Maintain positioning */
+        position: absolute; 
     }
 }
 
-@media (max-width: 480px) { /* Phones */
+@media (max-width: 480px) { 
     .transition {
         overflow: hidden;
-        width: 100%; /* Adjust for single-circle view */
+        width: 100%; 
     }
     .circle {
         position: absolute;
     }
 }
 
-/* ------------------------------------------------------------------------------------------------------------------- */
-
-/* 📱 Small Devices (Phones, max-width: 768px) */
 @media (max-width: 768px) {
 	
 	.review {
-        gap: 0px; /* Reduce the spacing between title and circle */
+        gap: 0px; 
     }
 
     .title {
-        margin-top: 10%; /* Reduce the top margin for the title */
+        margin-top: 10%; 
     }
 
     .transition {
-        overflow: visible; /* Hide overflowing circles */
+        overflow: visible; 
         width: 100%;
-        height: 400px; /* Limit transition areawhy height */
+        height: 400px; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2164,50 +2054,49 @@ nav h3:hover {
     }
 
     .circle {
-        width: 80px; /* Smaller circle size for phones */
+        width: 80px; 
         height: 80px;
-        opacity: 0; /* Hide non-focused circles */
-        transform: translateX(100vw); /* Move circles out of view */
+        opacity: 0; 
+        transform: translateX(100vw); 
         position: absolute;
-        transition: opacity 1s ease, transform 1s ease; /* Smooth transitions */
+        transition: opacity 1s ease, transform 1s ease; 
     }
 
     .circle.focus {
-        opacity: 1; /* Make focused circle fully visible */
-        transform: translateX(0) scale(1.8); /* Enlarge and center */
-        z-index: 2; /* Bring focus circle to the front */
+        opacity: 1; 
+        transform: translateX(0) scale(1.8); 
+        z-index: 2; 
     }
 
     .reviewinfo {
-        text-align: center; /* Keep text centered */
-        margin-top: 0px; /* Slight spacing adjustment */
-        width: 170%; /* Allow text to extend beyond the circle */
-        max-width: 450px; /* Prevent too wide text */
-        overflow-wrap: break-word; /* Ensure wrapping works properly */
+        text-align: center; 
+        margin-top: 0px; 
+        width: 170%; 
+        max-width: 450px; 
+        overflow-wrap: break-word; 
         white-space: normal;
     }
 
     .reviewinfo h3 {
-        font-size: 1rem; /* Adjusted heading size */
+        font-size: 1rem; 
     }
 
     .circle.focus .reviewinfo h3 {
-        font-size: 1.2rem; /* Emphasize focused heading */
+        font-size: 1.2rem; 
     }
 
     .reviewinfo p {
-        font-size: 0.8rem; /* Smaller text for mobile */
+        font-size: 0.8rem; 
     }
 
     .circle.focus .reviewinfo p {
-        font-size: 1rem; /* Emphasize focused text */
+        font-size: 1rem; 
     }
 }
 
-/* 📱 Very Small Devices (Phones Portrait, max-width: 480px) */
 @media (max-width: 480px) {
     .transition {
-        height: 180px; /* Adjusted height for smaller screens */
+        height: 180px; 
     }
 
     .circle {
@@ -2216,7 +2105,7 @@ nav h3:hover {
     }
 
     .circle.focus {
-        transform: translateX(0) scale(1.5); /* Smaller focus size */
+        transform: translateX(0) scale(1.5); 
     }
 
     .reviewinfo h3 {
@@ -2243,22 +2132,10 @@ nav h3:hover {
 
 
 
-
-
-
-
-
-
-
-/* ========================== */
-/* About us
-/* ========================== */
-
-/* Hero Section areawhy */
 .aboutus {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background: url('abtushero.jpg') no-repeat center center/cover; /* https://media.istockphoto.com/id/1248298359/photo/luxury-restaurant-interior-at-night.jpg?s=612x612&w=0&k=20&c=Uy2slhNJFTcHdQfRG5bSsOsFfl7J10a5ub5ZVofk-6c= */
     display: flex;
     align-items: center;
@@ -2267,18 +2144,16 @@ nav h3:hover {
     overflow: hidden;
 }
 
-/* Overlay for Opacity Effect */
 .abtoverlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+    background: rgba(0, 0, 0, 0.7); 
     z-index: 1;
 }
 
-/* Hero Content (Text Centered) */
 .abtcontent {
     position: relative;
     z-index: 2;
@@ -2299,7 +2174,6 @@ nav h3:hover {
     animation: fadeInUp 1.5s ease-in-out forwards;
 }
 
-/* Hero Subtext */
 .abtcontent p {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -2309,7 +2183,7 @@ nav h3:hover {
     animation-delay: 0.5s;
 }
 
-/* CTA Button */
+
 .abtbtn {
     display: inline-block;
     padding: 12px 25px;
@@ -2342,7 +2216,7 @@ nav h3:hover {
     }
 }
 
-/* Fade-in Up Animation */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -2354,11 +2228,6 @@ nav h3:hover {
     }
 }
 
-/* ========================== */
-/* 📱 RESPONSIVE DESIGN */
-/* ========================== */
-
-/* Tablets */
 @media (max-width: 768px) {
     .abtcontent h1 {
         font-size: 2.5rem;
@@ -2373,7 +2242,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Phones */
 @media (max-width: 480px) {
     .abtcontent h1 {
         font-size: 2rem;
@@ -2389,16 +2257,12 @@ nav h3:hover {
     }
 }
 
-/* ========================== */
-/* 🌟 Why We Do What We Do Section */
-/* ========================== */
-
 .why {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f9f6f1;
-    padding: 5% 5%; /* Uniform padding for responsiveness */
+    padding: 5% 5%; 
     width: 100%;
 }
 
@@ -2429,7 +2293,7 @@ nav h3:hover {
 
 .imgabt img {
     width: 100%;
-    height: 600px; /* Set a specific height */
+    height: 600px; 
     object-fit: cover; 
     
 }
@@ -2499,7 +2363,6 @@ nav h3:hover {
     font-family: 'Nunito', sans-serif;
 }
 
-/* 📌 CTA Button */
 .btnwhy {
     background-color: #d4a46e;
     color: white;
@@ -2520,11 +2383,7 @@ nav h3:hover {
     background-color: #b2845b;
 }
 
-/* ========================== */
-/* 📱 Responsive Design */
-/* ========================== */
 
-/* 🖥️ Large Tablets (1024px and below) */
 @media (max-width: 1024px) {
     .areawhy {
         flex-direction: column;
@@ -2563,7 +2422,6 @@ nav h3:hover {
     }
 }
 
-/* 📱 Small Tablets (768px and below) */
 @media (max-width: 768px) {
     .why {
         padding: 5% 5%;
@@ -2622,7 +2480,6 @@ nav h3:hover {
     }
 }
 
-/* 📱 Mobile Devices (480px and below) */
 @media (max-width: 480px) {
     .areawhy {
         gap: 10%;
@@ -2675,10 +2532,6 @@ nav h3:hover {
 }
 
 
-/* ========================== */
-/* 🌟 Chef Section Styling */
-/* ========================== */
-
 .chef {
     display: flex;
     width: 100%;
@@ -2728,11 +2581,7 @@ nav h3:hover {
     color: black;
 }
 
-/* ========================== */
-/* 📱 Responsive Design */
-/* ========================== */
 
-/* Tablets and Smaller Screens */
 @media (max-width: 1024px) {
     .chef {
         flex-direction: column; 
@@ -2759,7 +2608,6 @@ nav h3:hover {
 	}
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
     .chef {
         padding: 30px 5%;
@@ -2785,7 +2633,7 @@ nav h3:hover {
 	}
 }
 
-/* Very Small Mobile Devices */
+
 @media (max-width: 480px) {
     .chef {
         padding: 20px 5%;
@@ -2812,18 +2660,12 @@ nav h3:hover {
 }
 
 
-
-/* ========================== */
-/* 🌟 Team Section Styling */
-/* ========================== */
-
 .team {
     padding: 60px 5%;
     text-align: center;
     position: relative;
 }
 
-/* Section Title */
 .teamheader {
     margin-bottom: 40px;
     position: relative;
@@ -2850,7 +2692,7 @@ nav h3:hover {
     opacity: 0.5;
 }
 
-/* Team Container */
+
 .teambox {
     display: flex;
     justify-content: center;
@@ -2858,9 +2700,8 @@ nav h3:hover {
     flex-wrap: wrap;
 }
 
-/* Team Card */
 .teamcard {
-    background: #fff; /* Card background */
+    background: #fff; 
     padding: 30px 20px;
     text-align: center;
 	border: 1px solid lightgrey;
@@ -2871,30 +2712,28 @@ nav h3:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative; /* Enable positioning for pseudo-elements */
-    border-radius: 0; /* No rounded corners */
-	cursor: pointer; /* Pointer cursor on hover */
+    position: relative; 
+    border-radius: 0; 
+	cursor: pointer; 
 }
 
 .teamcard:hover {
-    transform: translateY(-10px) scale(1.05); /* Rise and expand slightly */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-    z-index: 2; /* Ensure card stays on top when hovered */
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    z-index: 2; 
 }
 
-/* Side Border Adjustment */
 .teamcard::before {
     content: '';
     position: absolute;
-    top: 30%; /* Aligns with the center of the circle */
+    top: 30%; 
     left: 0;
-    width: 5px; /* Thin border */
-    height: 80px; /* Short border height */
-    background: mediumseagreen; /* Theme color */
-    border-radius: 0 5px 5px 0; /* Slight rounding on edges */
+    width: 5px; 
+    height: 80px; 
+    background: mediumseagreen; 
+    border-radius: 0 5px 5px 0; 
 }
 
-/* Team Image */
 .teamimg {
     margin-bottom: 5px;
     overflow: hidden;
@@ -2903,8 +2742,8 @@ nav h3:hover {
     height: 120px;
     margin: 0 auto 15px;
     border: 4px solid mediumseagreen;
-    position: relative; /* Positioning for alignment */
-    z-index: 2; /* Ensure it stays above the border */
+    position: relative; 
+    z-index: 2; 
 }
 
 
@@ -2916,7 +2755,6 @@ nav h3:hover {
 	margin-top:5px;
 }
 
-/* Team Member Info */
 .teamcard h3 {
     font-size: 1.2rem;
     color: #3e2723;
@@ -2930,12 +2768,6 @@ nav h3:hover {
 }
 
 
-
-/* ========================== */
-/* 📱 Responsive Design */
-/* ========================== */
-
-/* Tablets */
 @media (max-width: 1024px) {
     .teambox {
         gap: 15px;
@@ -2947,7 +2779,6 @@ nav h3:hover {
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
     .teambox {
         gap: 10px;
@@ -2959,7 +2790,7 @@ nav h3:hover {
     }
 }
 
-/* Very Small Devices */
+
 @media (max-width: 480px) {
     .teamheader h2 {
         font-size: 1.5rem;
@@ -2972,8 +2803,6 @@ nav h3:hover {
    
 }
 
-
-/* Timeline Styling */
 .timeline {
   background: linear-gradient(to bottom, #f4f1ea, #e0d8c3);
   padding: 60px 5%;
@@ -3012,7 +2841,7 @@ nav h3:hover {
   position: absolute;
   left: 16%;
   width: 4px;
-  height: 0; /* Start collapsed */
+  height: 0; 
   background: #6c63ff;
   z-index: 0;
   transition: height 0.5s ease-in-out;
@@ -3065,13 +2894,13 @@ nav h3:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   margin-left: 30%;
   width: 60%;
-  opacity: 0; /* Hidden initially */
-  transform: scale(0.8); /* Scaled down */
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth entrance */
-  transition-delay: 0.5s; /* Wait until the line finishes animating */
-  display: flex; /* Enable flex layout */
-  align-items: center; /* Vertically align image and text */
-  gap: 20px; /* Add space between the image and text */
+  opacity: 0; 
+  transform: scale(0.8); 
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+  transition-delay: 0.5s; 
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
 }
 
 
@@ -3082,12 +2911,6 @@ nav h3:hover {
 
 
 
-
-/* ========================== */
-/* 📱 Responsive Adjustments */
-/* ========================== */
-
-/* 🖥️ Large Desktop Screens */
 @media (min-width: 1200px) {
   .timelineheader h2 {
     font-size: 3rem;
@@ -3099,7 +2922,6 @@ nav h3:hover {
   }
 }
 
-/* 💻 Medium Devices (Tablets and Small Desktops) */
 @media (max-width: 1024px) {
   .timeline-line {
     left: 10%;
@@ -3131,7 +2953,6 @@ nav h3:hover {
   }
 }
 
-/* 📱 Small Devices (Tablets and Large Phones) */
 @media (max-width: 768px) {
   .timelineheader h2 {
     font-size: 2rem;
@@ -3171,7 +2992,6 @@ nav h3:hover {
   }
 }
 
-/* 📱 Extra Small Devices (Mobile Phones) */
 @media (max-width: 480px) {
   .timelineheader h2 {
     font-size: 1.5rem;
@@ -3219,9 +3039,6 @@ nav h3:hover {
 
 
 
-/* ========================== */
-/* 🌟 Why Choose Us Section Styling */
-/* ========================== */
 
 .whychoose {
   background: linear-gradient(to bottom, #f4f1ea, #e0d8c3); 
@@ -3325,11 +3142,7 @@ nav h3:hover {
   margin: 0;
 }
 
-/* ========================== */
-/* 📱 Responsive Adjustments */
-/* ========================== */
 
-/* Tablets */
 @media (max-width: 1024px) {
   .whychoosearea {
     flex-direction: column;
@@ -3350,7 +3163,6 @@ nav h3:hover {
   }
 }
 
-/* Mobile Devices */
 @media (max-width: 768px) {
   .whychoosehead {
     font-size: 2rem;
@@ -3379,7 +3191,6 @@ nav h3:hover {
   }
 }
 
-/* Small Mobile Devices */
 @media (max-width: 480px) {
   .whychoosehead {
     font-size: 1.8rem;
@@ -3412,12 +3223,8 @@ nav h3:hover {
 }
 
 
-/* ========================== */
-/* 🌟 Footer */
-/* ========================== */
-
 .footer {
-  background: black; /* Warm Beige Theme */
+  background: black; 
   color: white;
   font-family: 'Nunito', sans-serif;
   padding: 40px 5%;
@@ -3488,17 +3295,80 @@ nav h3:hover {
   font-size: 0.8rem;
   color: white;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footerarea {
     flex-direction: column;
-    text-align: left;
-    gap: 30px;
+    align-items: center;
+    text-align: center;
   }
 
-  .footerlink ul {
-    display: inline-block;
-    text-align: center;
+  .footername,
+  .footerlink,
+  .contactfooter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footerlink ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 10%;
+  }
+
+  .footername h3 {
+    font-size: 1.2rem;
+  }
+
+  .footerlink h4,
+  .contactfooter h4 {
+    font-size: 1rem;
+  }
+
+  .footername p,
+  .contactfooter p,
+  .footerlink ul li a {
+    font-size: 0.85rem;
+  }
+
+  .footerdown {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 5%;
+  }
+
+  .footerarea {
+    gap: 15px;
+  }
+
+  .footername h3 {
+    font-size: 1rem;
+  }
+
+  .footername p {
+    font-size: 0.8rem;
+  }
+
+  .footerlink h4,
+  .contactfooter h4 {
+    font-size: 0.9rem;
+  }
+
+  .footerlink ul li a {
+    font-size: 0.8rem;
+  }
+
+  .footerdown {
+    font-size: 0.7rem;
   }
 }
 
@@ -3510,28 +3380,10 @@ nav h3:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================== */
-/* systainability
-/* ========================== */
-
-/* Hero Section areawhy */
 .sustainable {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background: url('sustainablehero.jpg') no-repeat center center/cover; /* https://img.freepik.com/premium-photo/elegant-restaurant-interior-with-dark-wood-green-plants_604472-36726.jpg */
     display: flex;
     align-items: center;
@@ -3649,11 +3501,7 @@ nav h3:hover {
   margin-top: 20px;
 }
 
-/* ========================== */
-/* 📱 Responsive Adjustments */
-/* ========================== */
 
-/* Tablets */
 @media (max-width: 768px) {
   .sustainableheader h2 {
     font-size: 2rem;
@@ -3691,7 +3539,6 @@ nav h3:hover {
   }
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
   .sustainableheader h2 {
     font-size: 1.8rem;
@@ -3842,34 +3689,31 @@ nav h3:hover {
     }
 }
 
-/* Overall container for the process flow */
 .process-flow {
     display: flex;
-    justify-content: space-between; /* Spread content evenly */
+    justify-content: space-between; 
     align-items: center;
     padding: 0px;
-    gap: 0px; /* Space between steps */
-    max-width: 100%; /* Ensure content fits within the screen width */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 0px; 
+    max-width: 100%; 
+    flex-wrap: wrap; 
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; 
 }
 
-/* Individual step and arrow container */
 .process-step {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 20px;
-    flex: 1; /* Make steps evenly spaced */
+    flex: 1; 
 }
 
-/* Step box styling */
 .step-box {
-    width: 220px; /* Fixed width for all boxes */
-    height: 300px; /* Fixed height for all boxes */
-    background: #ffffff; /* Pure white background */
-    border: 1px solid #ccc; /* Subtle border */
+    width: 220px; 
+    height: 300px; 
+    background: #ffffff; 
+    border: 1px solid #ccc; 
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -3877,92 +3721,85 @@ nav h3:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box; /* Include padding in the box dimensions */
+    box-sizing: border-box; 
 }
 
-/* Image styling */
 .step-image {
     width: 100%;
     height: auto;
     margin: 0 auto 10px;
-    border-radius: 4px; /* Slight rounding for aesthetic */
+    border-radius: 4px; 
 }
 
-/* Title styling */
 .step-title {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px; /* Bring title and description closer */
+    margin-bottom: 5px; 
 }
 
-/* Description styling */
 .step-description {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
-    flex-grow: 1; /* Fills available space evenly */
+    flex-grow: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Arrow styling using an image */
 .arrow-image {
-    width: 100px; /* Long arrows */
+    width: 100px; 
     height: auto;
-    margin: 0 20px; /* Space around the arrows */
+    margin: 0 20px; 
 }
 
-/* Responsive Design */
 
-/* Medium screens (Tablets) */
 @media (max-width: 1024px) {
     .process-flow {
-        justify-content: center; /* Center content */
-        gap: 0px; /* Reduce space between steps */
+        justify-content: center; 
+        gap: 0px; 
     }
 
     .process-step {
-        flex-direction: column; /* Stack steps vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     .arrow-image {
-        margin: 20px 0; /* Add spacing for arrows in vertical layout */
-        width: 80px; /* Shorter arrows */
+        margin: 20px 0; 
+        width: 80px; 
     }
 
     .step-box {
-        width: 200px; /* Adjust box size */
-        height: 260px; /* Reduce height */
+        width: 200px; 
+        height: 260px; 
     }
 }
 
-/* Small screens (Phones) */
 @media (max-width: 768px) {
     .process-flow {
-        flex-direction: column; /* Stack everything vertically */
+        flex-direction: column; 
         align-items: center;
-        gap: 0px; /* Reduce gaps for smaller screens */
+        gap: 0px; 
     }
 
     .step-box {
-        width: 100%; /* Take full width */
-        max-width: 300px; /* Add a max width for readability */
-        height: auto; /* Allow height to adjust */
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
     }
 
     .step-title {
-        font-size: 16px; /* Adjust title font size */
+        font-size: 16px; 
     }
 
     .step-description {
-        font-size: 12px; /* Adjust description font size */
+        font-size: 12px; 
     }
 
     .arrow-image {
-        width: 60px; /* Smaller arrows for small screens */
+        width: 60px; 
     }
 }
 
@@ -4088,8 +3925,6 @@ nav h3:hover {
 
 
 
-
-/* Fancy Page Section */
 .morepage {
     display: flex;
     align-items: center;
@@ -4099,7 +3934,6 @@ nav h3:hover {
     background: linear-gradient(to bottom right, #ffffff, #eaeaea);
 }
 
-/* Content Container */
 .moresection {
     display: flex;
     flex-wrap: wrap;
@@ -4110,7 +3944,6 @@ nav h3:hover {
     overflow: hidden;
 }
 
-/* Image Section */
 .imagemore {
     flex: 1 1 50%;
     position: relative;
@@ -4122,7 +3955,6 @@ nav h3:hover {
     object-fit: cover;
 }
 
-/* Text Section */
 .infomore {
     flex: 1 1 50%;
     padding: 40px;

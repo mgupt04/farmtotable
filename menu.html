@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veggie Restaurant Menu</title>
-	<link rel="stylesheet" href="styles.css">
-    <style>
+    <title>Vegetarian Restaurant</title>
+	
+
+<style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f8f8;
@@ -80,15 +81,164 @@
             color: #b29054;
             margin-left: auto;
         }
+@media (max-width: 1024px) {
+    .menupage {
+        width: 90%;
+        margin: 5%;
+        padding: 15px;
+    }
+
+    .menuheader h1 {
+        font-size: 28px;
+    }
+
+    .menuSection h2 {
+        font-size: 30px;
+    }
+
+    .menuItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menuItem img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .menuItem .itemPrice {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header img {
+        max-width: 60px;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menuheader h1 {
+        font-size: 24px;
+    }
+
+    .menuSection h2 {
+        font-size: 26px;
+    }
+
+    .menuItem {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menuItem img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .menuItem .itemDescription {
+        margin-bottom: 10px;
+    }
+
+    .menuItem .itemPrice {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .footerarea {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerlink ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footerlink ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .menuheader h1 {
+        font-size: 20px;
+    }
+
+    .menuSection h2 {
+        font-size: 20px;
+        padding-bottom: 3px;
+    }
+
+    .menuItem .itemName {
+        font-size: 18px;
+    }
+
+    .menuItem .itemDescription {
+        font-size: 14px;
+    }
+
+    .menuItem .itemPrice {
+        font-size: 14px;
+    }
+
+    .footerarea h3,
+    .footerarea h4 {
+        font-size: 18px;
+    }
+
+    .footerarea p {
+        font-size: 14px;
+    }
+
+    nav h3 {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mobile-nav.active {
+        display: flex;
+    }
+}
     </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
- <!-- Headings -->
     <div class="headings">
-        <p>A Website Created by Manit Gupta</p>
+        <p>Fresh. Ethical. Deliciously Sustainable Dining.Gupta.</p>
     </div>
 
-    <!-- Top Section -->
     <div class="top">
         <header>
             <img src="logo.jpg" alt="logo">
@@ -108,7 +258,7 @@
                 </div>
             </div>
             <nav>
-               <a href = "html.html"> <h3>Home </h3> </a>
+               <a href = "index.html"> <h3>Home </h3> </a>
                 <a href = "aboutus.html"> <h3>About us  </h3></a>
                <a href ="menu.html"> <h3>Menu </h3> </a>          
                 <a href = "sustainable.html"><h3>Sustainability </h3> </a>
@@ -119,14 +269,13 @@
         </div>
     </div>
 
-    <!-- Sticky Header -->
 <header class="sticky-header">
     <div class="logo-section">
         <img src="logo.jpg" alt="Logo">
         <h1>The Garden Plate</h1>
     </div>
     <div class="nav-section">
-        <a href = "html.html"> <h3>Home </h3> </a>
+        <a href = "index.html"> <h3>Home </h3> </a>
                 <a href = "aboutus.html"> <h3>About us  </h3></a>
                <a href ="menu.html"> <h3>Menu </h3> </a>          
                 <a href = "sustainable.html"><h3>Sustainability </h3> </a>
@@ -140,8 +289,8 @@
         <span></span>
     </div>
     <div class="mobile-nav" id="mobile-nav">
-        <a href = "html.html"> <h3>Home </h3> </a>
-        <a href = "html.html"> <h3>Home </h3> </a>
+        <a href = "index.html"> <h3>Home </h3> </a>
+        <a href = "index.html"> <h3>Home </h3> </a>
                 <a href = "aboutus.html"> <h3>About us  </h3></a>
                <a href ="menu.html"> <h3>Menu </h3> </a>          
                 <a href = "sustainable.html"><h3>Sustainability </h3> </a>
@@ -152,18 +301,6 @@
 </header>
 
 
-
-<!-- Hero Section -->
-	<section class="sustainable">
-		<div class="abtoverlay"></div>
-		<div class="abtcontent">
-			<h1>Sustainability: A Promise on Every Plate</h1>
-			<p>
-				From ethical sourcing to zero-waste kitchens, every choice we make is a step towards a greener planet.
-			</p>
-			<a href="#menu" class="abtbtn">Sustainability isn’t a trend—it’s our tradition.</a>
-		</div>
-	</section>
 
 
     <div class="menupage">
@@ -309,7 +446,7 @@
     <div class="footerlink">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="html.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="menu.html">Menu</a></li>
 		<li><a href="sustainable.html">Sustainability</a></li>
@@ -332,3 +469,11 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
