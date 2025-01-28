@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #333;
     line-height: 1.5;
     background-color: #F4F1EA;
@@ -50,7 +50,7 @@ body {
         }
 
         .header-top a:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
 
         .header-top .mediasectop img {
@@ -58,6 +58,7 @@ body {
             height: 18px;
             margin-right: 10px;
         }
+
      
         .mainheading {
             background-color: white;
@@ -89,7 +90,7 @@ body {
 		}
 
         .mainheading .logosec h1 {
-            font-family:  Arial, Helvetica, sans-serif;
+            font-family: 'Arial', sans-serif;
             font-size: 1.8rem;
             color: mediumseagreen;
             margin: 0;
@@ -539,8 +540,6 @@ body {
     background: darkred;
 }
 
-
-
 .hero-slide .image {
     max-width: 50%;
     display: flex;
@@ -557,8 +556,6 @@ body {
     border-radius: 10px;
     animation: fadeInImage 1.5s ease-in-out forwards;
 }
-
-
 
 @media (max-width: 1024px) {
     .hero {
@@ -703,7 +700,7 @@ body {
 }
 
 .lefttitle h2 {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
     color: #444;
 }
@@ -713,7 +710,7 @@ body {
 }
 
 .lefttitle h1 {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     color: #444;
 }
@@ -753,7 +750,7 @@ body {
 	width: 100%;
     background: #000;
     color: #fff;
-    padding: 35px;
+    padding: 60px;
     align-items: center;
     gap: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -766,7 +763,7 @@ body {
 }
 
 .menu-details h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin: 10px 0;
     color: #d4a46e;;
 }
@@ -1199,11 +1196,10 @@ body {
     font-size: 28px; 
     margin-bottom: 30px;
     font-weight: 400;
-	text-align:center;
 }
 
 .titlefeature span {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 40px; 
     font-style: italic;
     color: #b29054;
@@ -1386,14 +1382,14 @@ body {
     text-align: center;
     color: white;
     padding: 2%;
-	padding-top: 5%;
+	padding-top: 4%;
     width: 80%;
     max-width: 1200px;
 }
 
 .content h1 {
     font-size: 50px;
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     color: #d4a46e;
     margin-bottom: 10px;
@@ -1588,23 +1584,21 @@ body {
     justify-content: center;
     gap: 90px; 
 	margin-top: 5%;
-
 }
 
 .Reviewssection {
  
 	letter-spacing: 1px;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-family: 'Cormorant Garamond', serif;
     font-size: 40px; 
     font-style: italic;
     color: #b29054;
-	text-align:center;
 }
 
 .Reviewssection span{
  
 	letter-spacing: 1px;
-	font-family:  Arial, Helvetica, sans-serif;
+	font-family: 'Cormorant Garamond', serif;
     font-size: 40px; 
     font-style: italic;
     color: #b29054;
@@ -1665,7 +1659,7 @@ body {
     max-width: 150px; 
     overflow-wrap: break-word; 
     white-space: normal; 
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Nunito', sans-serif; 
 }
 
 
@@ -1842,7 +1836,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65); 
+    background: rgba(0, 0, 0, 0.7); 
     z-index: 1;
 }
 
@@ -1859,7 +1853,7 @@ body {
 /* Hero Heading */
 .abtcontent h1 {
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
     margin-bottom: 15px;
     opacity: 0;
@@ -2004,7 +1998,7 @@ body {
 .textarea h1 {
     font-size: 8vw; 
     color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     background-image: url("abtushero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -2019,7 +2013,7 @@ body {
 .textarea h3 {
     font-size: 3vw;
     color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     background-image: url("abtushero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -2035,7 +2029,7 @@ body {
     font-size: 1.2rem;
     color: grey;
     margin-bottom: 5px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Subtitle */
@@ -2043,7 +2037,7 @@ body {
     font-size: 2rem;
     color: #333;
     margin-bottom: 15px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /* Body Text */
@@ -2052,7 +2046,7 @@ body {
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .btnwhy {
@@ -2065,7 +2059,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     transition: background-color 0.3s ease;
     width: 40%;
     max-width: 200px;
@@ -2237,9 +2231,9 @@ body {
 
 
 .chef img {
-    max-width: 45%; 
+    max-width: 35%; 
     border-radius: 10px;
-    margin-left: -5%; 
+    margin-left: 2%; 
     object-fit: cover; 
 }
 
@@ -2260,7 +2254,7 @@ body {
     font-size: 1rem; 
     color: #333; 
     line-height: 1.6; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
 }
 
@@ -2269,7 +2263,7 @@ body {
     color: #333; 
     line-height: 1.6; 
     margin: 0;
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Nunito', sans-serif;
     color: black;
 }
 
@@ -2366,7 +2360,7 @@ body {
 .teamheader h2 {
     font-size: 2rem;
     color: black; 
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -2511,7 +2505,7 @@ body {
 
 .timelineheader h2 {
   font-size: 2.5rem;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #444;
 }
 
@@ -2793,7 +2787,7 @@ body {
 
 .whychoosehead {
   font-size: 2.5rem;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #444;
   margin-bottom: 30px;
   text-align: left;
@@ -2823,14 +2817,14 @@ body {
 .whychoosecard h3 {
   font-size: 1.2rem;
   color: #444;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin-bottom: 5px;
 }
 
 .whychoosecard p {
   font-size: 0.9rem;
   color: #666;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0;
 }
 
@@ -2918,11 +2912,10 @@ body {
 .footer {
   background: black; 
   color: white;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
   padding: 40px 5%;
   border-top: 2px solid #d4a46e;
   margin-top: 20%;
-
 }
 
 .footerarea {
@@ -2937,7 +2930,7 @@ body {
 
 .footername h3 {
   font-size: 1.5rem;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   color: mediumseagreen;
   margin-bottom: 10px;
 }
@@ -3066,11 +3059,18 @@ body {
 }
 
 
+
+
+
+
+
+
+
 .sustainable {
     position: relative;
     width: 100%;
     height: 100vh; 
-    background: url('abtushero.jpg') no-repeat center center/cover; 
+    background: url('sustainablehero.jpg') no-repeat center center/cover; /* https://img.freepik.com/premium-photo/elegant-restaurant-interior-with-dark-wood-green-plants_604472-36726.jpg */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3086,7 +3086,7 @@ body {
 
 .sustainableheader h2 {
   font-size: 2.5rem;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #444;
   margin-bottom: 10px;
 }
@@ -3177,7 +3177,7 @@ body {
   margin-top: 10px;
   font-size: 1.1rem;
   color: #444;
-  font-family:  Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .sustainableinfo p {
@@ -3689,39 +3689,5 @@ body {
 }
  
 	
-a{
-	text-decoration: none;
-	color: white;
-}
-
-
-.buttonback button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background: mediumseagreen;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px; 
-	float: right;
-}
-
-.buttonback button:hover {
-    background: darkgreen;
-}
-
-.forms{
-	text-align: center;
-}
-
-.forms p{
-	background-color: white;
-	padding: 1%;
-	width: 15%;
-	margin: auto;
-	  font-weight: bold;
-}
-
-
+	
+	

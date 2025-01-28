@@ -5,118 +5,406 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="styles.css">
+	<style>
+		*{
+		margin:0;
+		}
+        h1 {
+			margin-top:2%;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+			text-align: center;         }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+	
+        .reference {
+			margin:2%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .referenceinfo {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .referenceinfo a {
+            display: block;
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            margin-top: 10px;
+  
+        }
+
+        .referenceinfo a:hover {
+            color: #005bb5;
+        }
+
+        @media (max-width: 768px) {
+            .reference {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="headings">
-        <p>Fresh. Ethical. Deliciously Sustainable Dining.Gupta</p>
-    </div>
-
-    <div class="top">
-        <header>
-            <img src="logo.jpg" alt="logo">
-            <h1>The Garden <br> Plate</h1>
-        </header>
-        <div class="right-side">
-            <div class="timing">
-				<div class = "together">
-					<img src="timing.png" alt="Timing">
-					<p>09:00 am - 09:00 pm</p>
-				</div>
-                <div class="follow">
-                    <p>Follow us:</p>
-                    <img src="facebook.png" alt="Facebook">
-                    <img src="instagram.png" alt="Instagram">
-                    <img src="linkdin.png" alt="LinkedIn">
-                </div>
-            </div>
-            <nav>
-               <a href = "index.html"> <h3>Home </h3> </a>
-                <a href = "aboutus.html"> <h3>About us  </h3></a>
-               <a href ="menu.html"> <h3>Menu </h3> </a>          
-                <a href = "sustainable.html"><h3>Sustainability </h3> </a>
-				<a href = "contact.html"><h3>Contact us </h3> </a>
-                <a href = "links.html"<h3>Refrences</h3></a>
-               
-            </nav>
+    <div class="header-top">
+        <div class="timingssec">
+            <a href="#"><b>Hours: 09:00 am - 09:00 pm</b></a>
+        </div>
+        <div class="mediasectop">
+            <a href="#"><img src="facebook.png" alt="Facebook" id ="imgtop"></a>
+            <a href="#"><img src="linkdin.png" alt="Twitter" id ="imgtop"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram" id ="imgtop"></a>
         </div>
     </div>
 
-<header class="sticky-header">
-    <div class="logo-section">
-        <img src="logo.jpg" alt="Logo">
-        <h1>The Garden Plate</h1>
+    <header class="mainheading">
+        <div class="logosec">
+            <img src="logo.jpg" alt="Restaurant Logo">
+            <h1>The Garden Plate</h1>
+        </div>
+        <nav>
+            <a href="index.html"><h3>Home</h3></a>
+            <a href="aboutus.html"><h3>About us</h3></a>
+            <a href="menu.html"><h3>Menu</h3></a>
+            <a href="sustainable.html"><h3>Sustainability</h3></a>
+            <a href="contact.html"><h3>Contact us</h3></a>
+            <a href="links.html"><h3>References</h3></a>
+        </nav>
+        <div class="mainmenusec" id="mainmenusec">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="mobilehead" id="mobilehead">
+        <button class="closingham" id="closingham">X</button>
+        <a href="index.html"><h3>Home</h3></a>
+        <a href="aboutus.html"><h3>About us</h3></a>
+        <a href="menu.html"><h3>Menu</h3></a>
+        <a href="sustainable.html"><h3>Sustainability</h3></a>
+        <a href="contact.html"><h3>Contact us</h3></a>
+        <a href="links.html"><h3>References</h3></a>
     </div>
-    <div class="nav-section">
-        <a href = "index.html"> <h3>Home </h3> </a>
-                <a href = "aboutus.html"> <h3>About us  </h3></a>
-               <a href ="menu.html"> <h3>Menu </h3> </a>          
-                <a href = "sustainable.html"><h3>Sustainability </h3> </a>
-				 <a href = "contact.html"><h3>Contact us </h3> </a>
-                <a href = "links.html"<h3>Refrences</h3></a>
-               
-    </div>
+   
     <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
     </div>
-    <div class="mobile-nav" id="mobile-nav">
-        <a href = "index.html"> <h3>Home </h3> </a>
-        <a href = "index.html"> <h3>Home </h3> </a>
-                <a href = "aboutus.html"> <h3>About us  </h3></a>
-               <a href ="menu.html"> <h3>Menu </h3> </a>          
-                <a href = "sustainable.html"><h3>Sustainability </h3> </a>
-				<a href = "contact.html"><h3>Contact us </h3> </a>
-                <a href = "links.html"<h3>Refrences</h3></a>
-                
-    </div>
-</header>
-
-<p>
-<!-- https://img.freepik.com/premium-photo/fresh-vegetables-fruits-wooden-shelves-supermarket_605022-29936.jpg -->
-<!-- https://cdn2.thescoutguide.com/wp-content/uploads/2024/05/09213308/tsg-localcheatsheets_eat-1-1280x1280-1.jpg -->
-<!-- https://cdn-icons-png.flaticon.com/512/7937/7937682.png -->
-<!-- https://cdn-icons-png.flaticon.com/512/3063/3063504.png -->
-<!-- https://static-00.iconduck.com/assets.00/silver-medal-icon-1540x2048-5w4d3h1v.png -->
-<!-- https://cdn-icons-png.freepik.com/256/8629/8629637.png?semt=ais_hybrid -->
-<!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWaubWOKiOSuCzWgTWyWtoBlaWtNXqnMMuBw&s -->
-<!-- https://cdn-icons-png.flaticon.com/512/5562/5562062.png -->
-<!-- https://cdn-icons-png.flaticon.com/512/59/59439.png -->
-<!-- https://img.icons8.com/win10/512/linkedin.png -->
-<!-- https://www.citypng.com/public/uploads/preview/black-and-white-outline-instagram-app-logo-icon-7017516951369307x990iaok2.png -->
-<!--https://images.squarespace-cdn.com/content/v1/5d96d524052c897425394aaf/1585325567841-HTYQQGFOM355FY5X03NP/farmer.jpg -->
-/*https://wallpapers.com/images/hd/nature-sustainability-wbi64buy7vcvjkhf.jpg */
-/* https://media.istockphoto.com/id/1248298359/photo/luxury-restaurant-interior-at-night.jpg?s=612x612&w=0&k=20&c=Uy2slhNJFTcHdQfRG5bSsOsFfl7J10a5ub5ZVofk-6c= */
-/* https://img.freepik.com/premium-photo/elegant-restaurant-interior-with-dark-wood-green-plants_604472-36726.jpg */
-<!--https://png.pngtree.com/element_our/sm/20180308/sm_5aa0fdd386c8a.png-->
-<!--https://png.pngtree.com/element_our/sm/20180308/sm_5aa0fdd386c8a.png-->
-<!--https://www.plantmachineryvehicles.com/cloud/2021/07/08/Neutral-fuels-biodiesel-(1).JPG-->
- <!--https://meyers.com/wp-content/uploads/2022/07/shutterstock_2152470619.webp-->
- <!--https://www.janedummer.com/wp-content/uploads/2022/01/JaneDummer_Upcycled-Ingredients-blog-image.jpg-->
- <!--https://cdn3.vectorstock.com/i/1000x1000/82/82/sustainable-development-glyph-icon-for-personal-vector-47458282.jpg -->
- <!--https://static.thenounproject.com/png/58368-200.png-->
- <!-- https://media.istockphoto.com/id/1183430297/vector/save-water-icon-vector-design.jpg?s=612x612&w=0&k=20&c=YXDyMC8s4U6FKqwD95xYw2W3e_CONmIE-My7K6kOkKY= -->
- <!--https://static.thenounproject.com/png/904430-200.png-->
-  <!--https://cdn-icons-png.flaticon.com/512/2666/2666715.png-->
-  <!-- https://t4.ftcdn.net/jpg/08/98/77/65/360_F_898776518_D6IJJlQF09FzJAQyeKIbhjZHXfQyhOHq.jpg -->
-  <!-- https://media.istockphoto.com/id/500210894/photo/farm-fresh-veggies.jpg?s=612x612&w=0&k=20&c=r-IzuQs9vKw8L3Wx4GF190vd1U89b_0SDZlmSnvqQqA= -->
-  <!-- https://www.pensketruckrental.com/media-library/a-man-picks-up-a-crate-of-fresh-vegetables.jpg?id=50467466&width=2119&height=1415&quality=90&coordinates=0%2C0%2C0%2C0 -->
-<!-- https://images.stockcake.com/public/2/3/e/23e413a4-7c68-43f4-ab52-585cceab752d_large/chef-chopping-vegetables-stockcake.jpg -->
-<!-- https://www.courant.com/wp-content/uploads/2024/08/Turning-table-scraps-into-gourmet-meals.jpg?w=640 -->
-<!-- https://www.foodandwine.com/thmb/_1hiOIg4S8v77tAbsVf-g7LodmE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/roasted-broccoli-steaks-tomato-butter-and-tapenade-FT-RECIPE0920-90bfa9b440a048f586a003eed5810a3e.jpg -->
-https://plumbingconcepts.com/wp-content/uploads/2020/03/Options-to-Make-Your-Home-More-Water-Efficient-scaled.jpg
-
-https://www.henryford.com/-/media/project/hfhs/henryford/henry-ford-blog/images/mobile-interior-banner-images/2020/06/food-bank-what-to-give.jpg?h=600&iar=0&w=640&hash=82575AABA57B2229A9030A24CAB6748C
 
 
-https://thecontentarchitects.com/wp-content/uploads/A813B2A7-10B1-41B3-9B83-48C4D77BFA4C.jpeg
+<div class="forms"> 
+	<h1>
+		<u>Copyright Checklist form </u>
+	</h1>
+	<p><a style="color:black;" href="ManitTSA2.pdf"”>Checklist form, click here.</a></p>
+	<h1>
+		<u>Work Hour Log form</u>
+	</h1>
+	<p> <a style="color:black;" href="ManitTSA1.pdf"”>Work Log form, click here.</a></p>
+</div>
+
+    <h1>References</h1>
+    <div class="reference">
+       
+        <div class="referenceinfo">
+            <a href="https://static.vecteezy.com/system/resources/previews/036/730/981/non_2x/ai-generated-dining-tables-under-a-lights-on-a-roof-covered-in-trees-free-photo.jpg" target="_blank">Outside night dinning - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://thumbs.dreamstime.com/b/vibrant-garden-harvest-featuring-bucket-overflowing-assortment-fresh-vegetables-generative-ai-352996039.jpg" target="_blank">Vegetable bin - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://www.google.com/imgres?q=plate%20with%20food%20and%20spieces%20uncopy%20writted%20image&imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fplate-spices-including-one-that-says-spice_608068-18100.jpg&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fpremium-ai-image%2Fplate-spices-including-one-that-says-spice_44012338.htm&docid=05Jrd1JBLmnFzM&tbnid=qYcDGKdA5GfouM&vet=12ahUKEwjXrpy5-JaLAxVCSDABHbGJNz4QM3oECBgQAA..i&w=626&h=417&hcb=2&ved=2ahUKEwjXrpy5-JaLAxVCSDABHbGJNz4QM3oECBgQAA" target="_blank">Plate of spices - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://www.shutterstock.com/image-photo/tapas-craft-cocktails-showcasing-succulent-600nw-2240833039.jpg" target="_blank">Fine dinning - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://www.shutterstock.com/image-photo/above-view-stuffed-bell-peppers-600nw-2332561267.jpg" target="_blank">Peppers- Source</a>
+        </div>
+
+       
+        <div class="referenceinfo">
+            <a href="https://thumbs.dreamstime.com/b/hearty-vegetable-stew-broccoli-carrots-okra-eggplant-cauliflower-rustic-bowl-348503147.jpg" target="_blank">Vegy Stew - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://media.istockphoto.com/id/944478708/photo/couple-eating-lunch-with-fresh-salad-and-appetizers.jpg?s=612x612&w=0&k=20&c=xZdIIHvakQrYCbR59RM8nrhEnw-xu4nE-BOeOhQPnck=
+" target="_blank">Fresh salad lunch - Source</a>
+        </div>
+		
+		  <div class="referenceinfo">
+            <a href="https://thumbs.dreamstime.com/b/culinary-journey-farm-to-table-ai-generated-culinary-journey-farm-to-table-ai-generated-visual-representation-328957933.jpg
+" target="_blank">Fresh dinning - Source</a>
+        </div>
 
 
-https://homeandapplianceking.com/wp-content/uploads/2021/08/9-Reasons-Why-You-Should-Use-Energy-Efficient-Appliances.jpg
+
+
+		        <div class="referenceinfo">
+            <a href="https://img.freepik.com/premium-photo/chef-carefully-garnishes-plate-food-with-fork-adding-finishing-touches-dish-symphony-flavors-each-forkful_538213-83596.jpg" target="_blank">Finishing touch - Source</a>
+        </div>
+
+      
+        <div class="referenceinfo">
+            <a href="https://media.istockphoto.com/id/1501984364/photo/farmer-examining-sunflower-seedlings-at-sunset.jpg?s=612x612&w=0&k=20&c=iZqmk44MP8u1KyA3h_U1G-0lm7anA1DEll-wr8d_7Ps=
+" target="_blank">Sun flower seed - Source</a>
+        </div>
+
+    
+        <div class="referenceinfo">
+            <a href="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-soil-plant-icon-png-image_4190498.jpg
+" target="_blank">Plant icon - Source</a>
+        </div>
+
+        <div class="referenceinfo">
+            <a href="https://cdn2.vectorstock.com/i/1000x1000/32/71/zero-waste-icon-stamp-badge-vector-42793271.jpg" target="_blank">Zero waste icon - Source</a>
+        </div>
+
+       
+        <div class="referenceinfo">
+            <a href="https://img.freepik.com/premium-vector/planet-earth-icon-earth-day-flat-symbol_921039-19771.jpg" target="_blank">World Icon - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://img.freepik.com/premium-photo/students-planting-trees-green-school-initiative-highlighting-education39s-role-sustainability-concept-studentled-eco-projects-green-school-initiatives-environmental-education_918839-108398.jpg" target="_blank">Planting seeds - Source</a>
+        </div>
+
+        <div class="referenceinfo">
+            <a href="https://img.freepik.com/premium-photo/restaurant-interior-with-plants_863013-36313.jpg" target="_blank">restaurant image - Source</a>
+        </div>
+		
+		  <div class="referenceinfo">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fholding-vegetables&psig=AOvVaw0sAKgMoeHNbPNCKVdEli8q&ust=1738105870500000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiKx4qDl4sDFQAAAAAdAAAAABAE" target="_blank">Holding fresh fruits and vegetables - Source</a>
+        </div>
 
 
 
-</p>
+
+
+
+
+      <div class="referenceinfo">
+            <a href="https://img.freepik.com/premium-photo/portrait-chef-with-arms-crossed_950347-27222.jpg" target="_blank">Chef  - Source</a>
+        </div>
+
+        
+        <div class="referenceinfo">
+            <a href="https://as1.ftcdn.net/jpg/04/02/71/10/1000_F_402711067_hA2ZKzQXGrncbUoYWJ96vHpedstUdzjB.jpg" target="_blank">Group lunch - Source</a>
+        </div>
+
+    
+        <div class="referenceinfo">
+            <a href="ttps://media.istockphoto.com/id/1215724626/vector/golden-medal-with-1st-place-for-winner-award-medallion-with-red-ribbon-trophy-gold-prize-on.jpg?s=612x612&w=0&k=20&c=0zYmUdUpkUPYD9ZqZNSxf0onVgQyqLux3dAQlPT7Ntc=
+" target="_blank">Gold medal - Source</a>
+        </div>
+
+        <div class="referenceinfo">
+            <a href="https://thumbs.dreamstime.com/b/silver-medal-13534684.jpg " target="_blank">Silver medal - Source</a>
+        </div>
+
+      
+        <div class="referenceinfo">
+            <a href="https://cdn.pixabay.com/photo/2013/07/12/18/35/world-153534_1280.png" target="_blank">World icon - Source</a>
+        </div>
+
+     
+        <div class="referenceinfo">
+            <a href="https://t4.ftcdn.net/jpg/10/53/08/45/360_F_1053084583_wkmlHKAa7zEPmOlE95yRN1t21FRrfJF9.jpg" target="_blank">Pan icon - Source</a>
+        </div>
+
+      
+        <div class="referenceinfo">
+            <a href="https://static.vecteezy.com/system/resources/previews/044/800/744/non_2x/ethical-icon-for-web-app-infographic-etc-vector.jpg" target="_blank">Balance icon - Source</a>
+        </div>
+		
+		  <div class="referenceinfo">
+            <a href="https://img.freepik.com/premium-vector/food-prohibited-icon-food-restricted-sign_135595-71355.jpg" target="_blank">Food icon - Source</a>
+        </div>
+
+
+	
+		
+		
+		<div class="referenceinfo">
+            <a href="https://t3.ftcdn.net/jpg/10/79/70/30/360_F_1079703067_uOXxU2G9Yt8sixyPmXr5RxRAwpLPgzcJ.jpg" target="_blank">Renuable plant icon - Source</a>
+        </div>
+
+      
+        <div class="referenceinfo">
+            <a href="https://static.vecteezy.com/system/resources/previews/014/724/742/non_2x/locally-grown-line-icon-vector.jpg" target="_blank">Plant marker - Source</a>
+        </div>
+
+       
+        <div class="referenceinfo">
+            <a href="https://cdn-icons-png.freepik.com/512/66/66213.png" target="_blank">Water icon - Source</a>
+        </div>
+
+       
+        <div class="referenceinfo">
+            <a href="https://media.istockphoto.com/id/1207759744/vector/food-donations-glyph-icon-charity-food-collection-box-with-meal-hearts-humanitarian.jpg?s=612x612&w=0&k=20&c=313fq3iLo6P6bD_qYpO6fA055CcZkyaEODWbjRKQCgU=" target="_blank">Food box icon - Source</a>
+        </div>
+
+       
+      
+ 
+        <div class="referenceinfo">
+            <a href="https://static.vecteezy.com/system/resources/previews/043/448/579/non_2x/energy-efficiency-glyph-inverted-icon-vector.jpg" target="_blank">Energy box icon - Source</a>
+        </div>
+
+       
+        <div class="referenceinfo">
+            <a href="https://media01.stockfood.com/largepreviews/MzQ2ODU2NDU4/11188918-Ratatouille-on-a-black-plate.jpg" target="_blank">Meal - Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://media.istockphoto.com/id/529101533/photo/water-conservation-in-europe-water-globe-in-the-hands.jpg?s=612x612&w=0&k=20&c=2sjCPSmivry5EL3FJ11l45wu4us5Q5CZrl-F779-ok0=" target="_blank">Holding globe - Source</a>
+        </div>
+		
+		
+		
+        <div class="referenceinfo">
+            <a href="https://media.istockphoto.com/id/1301959047/photo/energy-efficiency-of-home-kitchen-appliances-concept.jpg?s=170667a&w=0&k=20&c=c7nyBrMsk3QhxqSKUi7GhQvWAZcuo4lvzmiNFVNuyJg=" target="_blank">Applicances - Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://media.istockphoto.com/id/1129605228/vector/no-plastic-signal.jpg?s=612x612&w=0&k=20&c=sDv23lPSmBtnol30TBY684Sh1iP9IMYexnYeqhCe7SY=" target="_blank">No waste - Source</a>
+        </div>
+
+
+
+        <div class="referenceinfo">
+            <a href="https://t3.ftcdn.net/jpg/05/02/18/64/360_F_502186443_Kubg3Wl76uE8BYl1tcAuYYXgGKAaO6r4.jpg" target="_blank">Rows of plants on farm- Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEBMVFRUVFRUVFRYVFhUVGBUVFhUXGBUXFhUYHSggGBolGxUXITEhJikrLi4uFx8zODMsNygtLi0BCgoKDg0OGxAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0vLy0tLS0vLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLf/AABEIARMAtwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYBBwj/xAA9EAABAwIEAwYDBgUEAgMAAAABAAIRAyEEBRIxQVFxBhMiYYGRMqGxFEJSwdHwByMzcuEVFmLxJKI0RIL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALhEAAgIBAwQABAUFAQAAAAAAAAECAxESITEEE0FRFDJhgSJCcZGhUrHR4fAF/9oADAMBAAIRAxEAPwDyXA11c0HSs9hqLheFcYOotBFiAuwk1PASAZpXdKIAlCoQMBEaEoT2hMQg1O7pPYEUBAiN3SQYpRYm6ExAYSRdC5pQAIhNIRoTS1IAS5Kc4JjggBak8VEFKUxkunUUtlZVrSjColkCY6skoDqqSeRFpW7MtbSJ4wscxul5byK9FzXNWCmYPBecGpqqE8ynMIlrR2RgEChsjhZlnUl1JMBBPaEwI1MJkjmtR2BcY1Ga1MQ2Ei1ETHFAAyE0hOcmoAY4JjkRyE5IAbkNyI5CKBjSuFdKaUAdDl0vQ0ikM6XpIbl1AYIuIxhLd1HwNEkyuAK6y/DIkwijlOnCKFIxNOIQEkyjsJQkF1MkQRWFBlIOQBNY5PDlDD0Rr0xEjUuEoQcu6kCOlcK4XJhcmAiUNxSc5Cc5IDpKY5LUmOcgZwrhXQwnYJGkeSAGJyaQugpDRwhcXSkkPJUsdstHlyy1N2y0+WmymbHBEzFjZRCFNxIsFFITjwNgymlEKG4pkjCUpTSU0uTFgOHIjXKJ3icKqAJgcu61E71cNVGREovQ3VFHdVQzUTyAdz0MvQTUTdaQEjUiUaRJ2QcNcq7y5glLIx2DwhPBWP8ApkjZXGW0GmLK7p4FpRqIwzz3F5ZHBVtTDQvTsZlQIWbx+ROGyNSGsmR+zri01LJH8kkZGeZ09wtRl2yzFMbei02XmyzkaRLHEbBRHFSq5sFEeVUeAkDc9Cc9dqKO8piHOehOqJjnITnIEENRc71R3OTC9AEzvk01lDNRN7xPIYJvfLneqIHrupAYJBqJB6jal0OSAmU60FW+BzFvOFnw5Pp3MIA9IyrM22utVgscCvKcBLVpctxREXKzbDB6IHgoFZjSs+3MXAboFXPo4qWxmooYdqSpMBngKSNSDB4iOC0OXmyzWpaXLhYK5lR5LCu6yhucpWKHhVc9yceAkKo5RqhTnvQKjkyRj3ILnLr3IDnIAcXJhKaXJNY47AnoEAccU3UiHDP/AAO9ihOYRuCOoRlDwx4KdKGCuoEEldCYCnhADwUfB/EowKm5YyXhJsDQYalIVxg2QAq+kxXOXYc7Bc0pbmmA1QDSs5jXXK1mLwhDZWRxtnQsLbtJUY5JOBqEcUlHw9RcXP8AFIvQYfktVl7gAFlCVa5bjJXsSRzp4NLiiCxVNQo5ryIUfQXGGgk8hdC2QPcA8plLDPqGGNJ6fqtJl3ZsmHVjAgnTxsOK1GBp0mABjb30tAidO5PleVyXdZGG0dzpr6WUt5bGIwnZSq/4yGjj5IuJ7It+5XBMxBHHlK1OaY6xayCRxAI3jccrhUr8ToIbO1i47kc1z/E2t5Oj4aCKvCZBSYQartR5AT6Dz8leU3UGAlrZI2tynf5KNRxIlwOzg3xSdRseM+G5BNjx2R8O+dJkOcQQ1rQALSNOmJi8bxx5BROblyy4wUeENOKE+LSI4j73RCqtpcg4TEuAEC9z5fqlWc0tYS2HAGdgDFhcmbSAeqE2raCN2k9TqBsDMzb6bKUU0Kpl2HcBNOS4ky2RHIT81GxGR0DcNc3oYGx/QqXWc8OPjh3hm0EEjbTY8BfhATmVAXB7bSSNJcY1Czi4giBcbbyFasmuGQ64PwU1Ts6yfC9zdt2zvsenmmVezNUfCWu+X1WipEC7J3Ehx1QLjawJMHccLKZhKYcfFG172mPxcL8VXxViJfTQZ5/XwNRnxsI9Le6sspoRcra0w12ptnBptM8x4Y47m6ZVyim4SwaXX22PRax6xPaSMZdI1vEqKVSIWkyiuFRV8Eafxeh4IWGxhYZVKW+TBprY2ONxA0wsRmrxr9UbGZ2TYbqpDi4yVzdQ00XDYmUUkqK6uHtmuTDFFwDbojaSm5PgnVKjWMElxAj6r6PV7OVwZc5Llr67g1g6u4Aea2mXZK2g4aQ4knSXmOV1bZZlbaDNLABPxcf3dSO6dPAQIANrx7QvG6jq5WPC4PTo6aMFl8kFuFD2FzvC0EkiRJgeW6j16boa6m0FjnnvHGQQ25t5lw2tx9bOsHObc72sQTPK1gRB4rmDoeGQQNWoERtFvXiuaJ0NFJi6TSNW9hIMcNxyP+FTuwveM16ZcS8CBJIaT8Mb7/ILQ1WNOsG0FocN41SQ6OOx9lAymWCo0HVBa6QSCwzcjmSSSfRaxJZTikASHfEGgtO1yPC03iAPqu96NTztpdHAtadREaQI2kgD3N1JLNRhwtO9trgD3ItzhRsVTklu5kg8QNwRA339+HFPJLQF7ZL+HhBj8MH4jG25B/RMFUiCfu6GtveRb1AB4c1Ip05NTWJOkElsg6R8gLAprGwACPEdwDPjneeUAfJVlE7g6QJe0m7p2vyabjykdYuuYY+J8l2kcfCIdJgW8iDI/wAomHeNQ8JJLiX84kG3lxJJ4cOMvDsNQEtAudoPibElo84DR16pvYQqXhEuuC8Cxt4htygX9+an0Ht28wLj70XE+eodYVVh9LiAfhc65Fo1GDYbzA9lc4XCtDmyZEweJIBJpkTG7rTHNIofhcEAZdYEtEzcPMtdMjadG/L3tKOGO0ctgRHRCpkQW7NdIJF4mALG33gYE7hT8KS1rdTJg6SRwcSG3H4ZJtwhTJIaYGvgGuBpuEyPZYbPsCaDtJuDdp5r1hmFmLed+e1iqftlkQq4dxA8VPxNge6uvUuDG5RkvqeRkKzyzLH1NgrLIOzzqpBIsvS8myBrALLoq6dz3kcMrMcGZybspaXBJekUcKAEl3KmCXBjqZ8p0ySvQv4XZUHPdWdu3wt5A8Ss2zAAcF6F2CY1tAguAlxsDcLn6yajU8Hb06cp7mnewtYTYkTN4iyHTwpawNcLiACeNrm3mEZ92FpBmCCdibKU+CGieEb3Hn7LyYzXJ3v0VmIotLS2SPFYgRp57b8b+afTILdIB3LXb363m8jbj1XHu0ugfESCBe9xHrJ+igVKopvALwBrMiJ1tLtjHASUozWQa2IuNDRPhMtABMRJABDhH3ZJHoq/Dfym1XuH9SGzyEWk8SdW6mFwDjvLdRdyIbERz+IeyrqTg4VCRBc9zgALaSAxhkbjwnoCnq2ArKjyHiIvYWG8yC70+SJh6QIBYCJ1apgb+ECB8IngOaYMJrYHHwzOp1+Fj+kIlWoDYFv4TEcrmJ/cKuUTkHVpPZqFgWnSdryBf2d9FB1TtMCLEgG9uHRScRUc2ZIMjwkg+KDpm/IfTyTGnhDdLY3FiLNO1+MqlsS5DsHSnXEn7258QtbqJ28l3I8U6b3OoOaBq3Idbrxjy9E3Buht7xBkRcmJvvBFk9jXBzXkaWmodLWADiTqPlGoT5J52YZ3JTcuLHbb6ZvJB0kj5x7KyY11oI3kiXeJoPHlxA6KPia7YaJmHmXAfETcwOXAnz81Hw2bN1vl4a1rIu74nFwnwk33FhtHVRljyi7oOcdOp0EiS0DaHiIPoP2FZNriajT4g0NcRJEODBqg9R7rI4PMLEh+t2zYBcb338oB9BzVxkVCtHwPdM/1IAcXHVcOjy2Q8jyvJrRiwIc2dJHSIgG/O6lPrtc2DsWn24z5qDTyeoaQ+0PbThpJDTJkg7Gw48lHyKm525JE2nlwn0XVRRbJ77Lyct11cVtuyyyfLWsFgr6mwBCoMgJ7ivW4POHucko7yklkDxIUAn0SWOBaSDzCmfZymtwxJAG5XiysbW57KglwaNudmnSDi9znCNgHBw9YhFyHNqmMDxTdTD2mdD2kO0+RBvdAwWQaqZBfebhV/wDtjFUqzX4cgOBkONvQjiPJcFN8ZzcXuv2JsjODLvFUMSw3FAnhrc9oJO94KqcdisQDDRh2w4H+seW12q5/iHmzG0AyB3ron84Xl3ZrI24zEOfWcDpkNYSALbudyC7VClt44+5OueNzZuw+LfT16GubN9NSb7bRcwN1AqVywOBpCTIJNQAwPS3+eKPhnmgXNw1ZouJbTBgETGom03NlV53hH4iRVcQecAR1AiQse7VF6XsDlIFiMaKTdVUgU3GD4yAQb2gWMouVYSpVph9IUnMcZDg4ukCRHw8L2Veez9Ms0Pc5wkWmJgz6Jz2Ck3TThgE2B0/IKu5X43ZGqWSxfk9Z0anMAG06nRfziNz7puNwzKTZOJptgXAAJjoXWVHUqBx8Ti7kJMfNTM6yttekC0AAsBIA2gwfYrRThlJolzl4I4zejJaH1zzc0UwDB4SFaYHMsK5pFTvzbYuaJPMlsXWLfQNJwaZv5fUKRSxAix8v2FrKOPlQtUjR95Ljpp0tMmAQXEDgCS652urPBOqnTpZSEcdIv+izGEqEkLWZO4+a4b7rIeSkyoz/ALQYluJc1rmhrWtGlogbST80HD5niakF1R1r2MfRA7Xdm6z6r69KpLpu0btgRFrradhMLhMRQbSrNIqxd4MOJ8+BW8p5ri1Ln+4lF77HcvzitWIbUdrjid1rMnqABVWHyalQqmm2SXE6XuPDoOKPVpupOhd3/nQ0OSk92c3U5wmuDXU64hP70LJNzNwTjmxXp6Tl1GpLwksmc6XUaQ1FO2k0hcw40PDgJ8kWnlhbRFV79xNuCFRxDWODtQdF/ZfM2Si04nsq+K3NXhMMKYNSoPEbnkPRVGZdqqdEFzhLz8LZ+EcCVX9o+1ZNM9w1xdx2EdOa8vzFuOrPaxrSDUiCdyDsZ5LWmlyjpSwhSe+XuyT2h7RmtV8Tpe4x/aFc5DkOKw9Ivp1A+nVkm155Hksl/txtN5751tIdLiW6naSYB4mxPoth2Wzx1HRSe7vaJBnT4iziHSYlqq+Eq4JU/fPn7lQWXmZb5HkBgPLQ54F3gubMzqllwTextsoeeVHNNp+EAxzFr+y2GVYujXB7qqQ4Wg2PrIk7bqBmeRVXuJL95B8I+fmvLuvzNOaw8GnYTykzznEYqptqKg1XkraYnsq/8Q9lV4/sVUc0kuMcth6gLqp6qj3gyl08ypwmWVjcsIHhu606hLY52ut3k+FIaJaCIGoDiQFTZfQxFNjWOAqBg8Mu0mADDSYvyHHZTsD2rLHaKtGP7XCw82uA+q27sZPK3IdLROpZfh3VHVcU1oiAxpa4iL6iYEE7QFm+2GVYWpQbVwoLnPfLWgeLuxZ0jmHFsTwlabOu0jHUHChDnEhsag3S0/FHGYt6+Sx+X4p86WaYHiuSC24kgtMgSR7hOqTUnPkpx2SYbL8HFEVxI7sEObb7twY4G0+isez/AGvwvey4P7vU53w7Fw3MCXdLKZleLwr2Pp1agZqB1GDDiBMEnYGIson+q4Nv9MBxiYDZPoVnG2Ud3Fvfb/Zo4JlP2kxj69bvcIyowOAB1bOgRMRvteeKgZVj8RhqutwtxA4LVYntJThobhzyM2d7E/RVOY5xTc3UMO4AjYkTPKZMLVtzWlxWPRMVp33NvgM/pYtoJcGVBs7z81cEGqIdGocRcFeZZXlb6jO9pU3GP6jWkFzORLRfT5+S3vZjNKLB3NTVqBgyTqB5QVnKydCW+PT/AMsO3GeVjP0OVKJBgoL2KyzGo3vDBsYKjSCvparFZFSXk8WyDjJogPpJKaWJLQgLhsPppPpOMgttPBZgYBtPxOJA2nkfNbKyFXwzO7c4gXG5Aj5rxes6bTFzg8L0dtblKWlPGTLYWqWOL4mQWsIdpuQQDP16KV2fwD6eH0ViHuJJDm30MJlgJMSQZ6KNm2Rv7mm6i8hrnHwls+OCCICPlWU4ptAio6NTSCDMtk/EAdjCwr6qMa0pM37qXzcodmVBnfUWuptqd6XNfTJhggGH6hxAkG8GQFTZ3hqNOrpos0PLidv5YBh0X2gggf3D0m5xRextGKbzSaXVDUqOOnVIFzPGAIHPqq3P851U9Li1rjuRDoaRt12HD5BawsjbD6F12KX4kc7SZhRp1h9jcdT5kgFgaCZ0ybnhtxC3uQY5z6VFta7qlMPY82LrXaR+IEEee68OxBe6o3QLfiduOPlw2XoWXY2kcJNV2kkfy4mQabQNZO7XElxjY+EcCsLumhbDc2Vm+DWZlVDTsVX47M2Bs1DpA/fFUju0ve02wx7qpOgBrT/MfsIjnyWSzZtcvP2gwWujSDIbaeHAcd/VeR03QSnLTPb/ALwb2XRSWOS4zPtSBIpMPGCbEjn5Xn2Wdx1eu6XPcxp1aQCJJ5meESOCHhHN1kvFhJ4gaZNiDMA7qXgsA2qH7tpsa6HSYJnYTyDhYRZe3V09dOyX3OaU5T5ZApYN5l7nOcABrDgSIcDEDbgb+SLUwTgT3RI0kfdEwYibXuRbqi06Qc3u51CQ2ByBJDuXE+6kd6aIA1ka2bbubqFhN9Rifn5FdDWcELZHcVlbnUw6mQ4tgGIHicAYvtfVEz+aNkmGFSkS1zW63NaWmSbg3NoGwHqLciYbOe8Z3FSGUnOoh7wyb02hoc21uZBndRMtc6lU10nXZLmkCZJmDyiNXsocF5GpPwcfgXUwcRNQ0Q6GOcW3aNgQDINxPD5LV4PFYWriGtpPNKm5rfE9sw57QHtd/wAZmDeJTMkZRENpVYeWPjWA5vgcwjVyJYHDkdvNZ6pkul9SpRcS1rodpN2NOxLd4+iHFYTBPk1eU1amBrOptAdT7ynFU6dbmuaS1zSJEGPpZT8173VSpgTq0VA6AHCJkOWUyjG1mPdWaX1KJgAlpLdTRpYL21Cfmtf2ZxBeD3lOXEnTqMGALysOp6iMK9HvbH6kOxRl9QGcO0OBD5lRKeYnmj9pMvax40yCRJG4HRUj6JGyfTuUYJZHpyvxGgo5lzSWca5wSXWuon7M3TD0ehUxN1Lo4fXTcwwQbw4SFAq5hTa8M2K5gMYO+cCfDwXB1XUSdmhb+/sYU4lPDGYXC4jC1RVadbA0k0oEOMGzCfgiyv8AMc5ovpt1ghxDS5ljpndriLcUag8E8ABsOf6IGNpOcYFJpbxJi46JJyVTjDh/Q6rK4vbhlPm9I1KXdMAgsM0wQSGzYm+3n6Ly7MOz3daiTVc4y1l2uh2wENEnyXptPK8QKwe1jQIg64BDTwDm3FgIVRm2T1GuJZTfUdOouD4i8tsInaR0XLVCyDznnlfoc7osXD/YgYHsuKVADFEGvJ1GmYbTEWaPxO8z0CoM+y0sZILnU23LRAvMkkhWNLMqgaWvc8mSQT4wCfUH6oWKxrXM0VHSIBJY2ZPK9oVp2Ker2NSsg/xGs/hv2fZTZ9qqNhxnuA7gCD/MjjMwDxueIXm2dl4e/vWkODiDYiTJ4mxG1/yWww/bR9Qhrmvd4dAMACeBMFVubY1paWvEjfSeJ4EyqVtiszKIO2SlnBkcNR4Hc35mJ3g77K5+3/yW0mtgiZPOSdus/Xmq8ZdSknXWYTfWLgGbjSdh6LhyFgc2o3FAkuBIeH09UGYO4ItzXcpx9/waO14+VjAzRV8R0uABvxneSN7FExdVtU6dTRAER5bE8+q0mXdnRicwNetpdQax2jSSQ5wd4QY6kxtZWNXKMM2o/vWAa5dIbJkkBrWwL7fJT31lL6fyRC5vZooezFJ1OtSux4BJAniW31Azbhce6pcz/wDHruY7UHzpaACBDrNsLabwFoG0KLKzgKb2tNtQIJNh9zzIUjA4Oq5zdTXS0kNeSDadp3G+yh3STflDnOa+VFbkOW1+9fTdTcHAOkEXa4WFuG3qpzMieWDu6h1QRVBcIqGbaXRYCSLrfHGOq0u4cDqdTAOkkeAGBqeLlvlPknZT2aoGafjDmgGTNzx6xyUZnZvDb9UGZyWW8FF/Dsuw/eMqMc+kRLwAHBrhP3Sb8rclsauFoOqNdRDmOLSR4C0EDhcKxwTKdNkNDGuiCBsSNz5IeLqAwfw7K5QShiTTCFSzsUmY5f34DgIIEXWVxGDIJBC3gxEixF1X42g13XmupVfgXspTae5h62GSVvicqdNvF0XVm4v0a6l7I9SgW1yXy7iDBPzhS6VCnrFTvIMyP0VqM/w5JBqAAAEuIgAO2M8vNG10Lh7qdxIJIEgcbrVdNCLZyQwt0SKVaYgyUbvTBk7Auva4uoFKjDToewnhsARysm43EWHeiIB2Jgb3kbris6aVbzHg7Y2xls+S1oYh7qbe8hr4kiLA+h5IP2uWgPAbq1TtJA2uOe6g/wCoMBADg625IuSQAPmg4hzXAeIyCRG3GDE81l3GylBAa2VUXlhAAeAQCN2i4BFxebLL5xlBbUJaWkyTHFvUfvdaEQ1xeC7pe4tCg1MR4i5wN5AmRbhM7qcrKYpVKXJUYbAFv3QWwDqsJtxVhiMvbWaC6WmxIHOAb89j7hMxtbwmHWaRtHPSABw4IWGrPIcdRgzIcfhiI/76LXVkNOBlXs83QT4nXPHSANgOEomNylpdwsAQB/jbYo765gEeJuxsd+d73PsuYoz4gSDp4eQm/Wfkk3gaWSoxGA8fgkGWuJaYMGYvzsrcVH76p8IBc4S4gXjVueN902mbzeQ0dIDVJpvmTx3Hn5JbeROK8oDXy9tRwqCLgE8IsfmCPmrmmSGDS1oJuSCSDwDQOHP2UA1juNgLiB5ruCxWpjTxsB63/fVPW8j0FsymSZaYdHivIggAi+3FWlE3Bc47bk7A7LPV8c2m4ajEx58jH0UsZr4hcQRfaBHI9EakLBeVJ3kEj9IVHnuPa0Fr3FuoEeHf0CjY7tS0ahTHeO/4yQDwl23oqmngqj3OqOqM1vHwkmRaYA49FrVS5y1PgmdiisDcLmAptDaWo3iajtgoTs9fRc8mrr46YJE8gVBzDK8Q2dUAfFLfzPA+SLlOHpwWOc575Ba1jHv9SWj816Sjucjlsa3s92gpVGgmWVIu11o6TuEljhljJ1VXlxk+AO2ud3Cw6AnbfmkndCO2SlVKW+DSuy2uBJqU2tY/wtDWhncDYXbLXDmDFkOmO8qae9o1NIcNI0uMHjvJtY3j2Qe0mErO7txpMq6WQ9gqy1rp+Lug4B4+arcHkVZ+Ip1WtcGshxeabaQsbNp02E24SV0uKkc+WifhsRTfUeykGEsImGVBdpiCRAN4vKlfaXOMAsBDfE0VKlj5iNuqDi+zbBVL6FSrSe4kuFMtABcZO4t7qPX7HV21qdXDEy0y91RziXOBmSYvIJBFtgo7WB93IHEUqQJ012t8WoENsOsCJ80Z2a12BrnOp1mTANPXIG8aQHDhxK1Tcie4yWNE7kwPpdOw/ZNtPU5pDC4eKNX62Wc+mjLlFRua4Mzhc/FQF1MOgRq0iSI5jzH5qDiM+ZcuMG4APhIkSJBHkFo8P2QoU6hqDEuZJu1rmgH+4m+94UbHUMlw5LqtTvHutAca589W8eq5n0MfLwbLqX4RmKuZt02Glp522NrptbMqbol8CQXCYnyPO6vaXajKqP8ATpVz5tYxoPlBIR6f8SMO0ju8DqbxL3MDvYNI+aj4WC/OX3pv8pTszFhaXBzdDY1HUB5kSfJRauf0uDxEReOPBTc97f1ajv8AwsPRoNi5fSZUe49Y0tA6Hqs7ie0uav8A/tFo5Mp0We2lgU/D1/1fwV3J+v5J3+5KQ0nWJsDcTbj1Q62fgn+W64dqAESf3KpXY3MDviap5zB/JSsFnGZ0hFLFVGjaA2nbp4VSoqX5gc5+i3q568x3bHFxMBukkk+Q9VcYLLswewfyjRZpJLqxbTDY4w64HosZTq5gahq/asQXnd3evk+gKLjaONrtDa9WtVbM6Xve4TI3BMSqVVCJbtZtKDMrqR9ozRrnM30ODRqNjocW+McJEq0pjI4j7Qx0xd1Vxd+ULyz/AENw3Edbf9ogysNHieB8z7DZbRcF8sUTKEny2erVc7ymkAA+k4NHhDWOcY9AoJz3J9xTeTv4W1GkHmDqC87o0GbHUfYR1P8AhS8GXD4Q0CeUn3KvuNeER219TU4vO8DINKhWeJmHu0MBjqbW22QcTmlSs2G6WMP3KYiR/wAnHdUbhxdc8z/lWeEBLG9FnZOTLhXFBKVMAbD/APXi+QSRS0DdJZaTTJZdouwlRxL6EH/g78nfr7rFYjCYjDPg66TuES32I3X0c6mCoOPyynVaW1GNe08HAFdHbceDBWZ5PEMF2uxtIz3gfH42h3z3+al1P4hY87d0OlM29ytdnP8ADthl2FdoP4HXb6HcfNY3G5VVoGK1Mt5Hdp6ELOVs4lxrhLgrMZ2ox9X4q9To06B/6gKBUr4l/wAdWq7+57z9Sr8UhyXRSnkFi+p9myoXgzVLAucb/NT2ZK47wrV9CP8ACfRqkWBnqsZXN8GirS5K9mQkjcKRR7P+amf6g0fEQD5lBq5/Sb96eglRqsfCKxBeSRh8kYFIZlVLiFTP7Ti+hhtzt9FHfnNZw+INnkPzVdq187B3K0aUZfSF7Dqo9avhmWc5sx92SfkslWrkzqLj1MoVJy2j0+PmZnK30jTVc7pCzKZd5mGj9fkotXNqjyNIDByHi+ZCqgU5tfn+wtFXFeDNzfsNUqPcfG4unmbbcALJBg/wgOxIG6G3FyYHO3mOP0WiTZGUia4hqacTsOe3RR3B7wIkQIvbiiU8EIE/v1WsaZMzlakPFcXnluevmrGjjIYAAXW4be5USjhgCIAmev1U0U+f/S1XTryZO9+DtOs8mTA9z811Go0+nuktFTFeDJ2y9nujXp4Kx+Cz57IFYEj8bfzb+i0ODxzXiWkFYZa5NNnwTX0wVXZmymGnvtOk76oj5qxD15j/ABCzQ1K/dA+Fg9yVFjWC4rci9paGCYHPoVYIvoFwenJYl/aVh+Fh+im4tngd0Kx9GoudVRlydCskuCyq5/UPwgN+ah1cwrO++fSyE2oOKTI3C3jXCPCJcpPljmBxPiJPVFYPJD1hN78dU+RbIkNdHFFbUsg4fDVHfCw9Tb6qZTyl5+ItbziSqVcn4JdkURamItZOZiIA6dLKfSyimPi1O+Q+SsMNgGizGgdBf3Vqj2Zu9eCmDajrBp67D3KNTy533nAbREnrKvaeBJNwjDAkLRUxRk7myjbgRvd378kanQAsGx0ACu6eDPEGEQYdo4LVRS4M3NvkqG4cnhMo9PDXv9LBWjaI4zZdF+qeBZIIwn4UanR4EBTGs2lP7ibpiIP2fTtKSs+5EJIwBaveeaC+u6m4FhLTImOPVdSWL4NDc4CqSwEmZC8r7Y//ADKnp9EklwS8HUuSmxB8DuhWKaV1JVXwUccLJM4JJLQC1yvCMd8TZ9SrujhWN+FoHokkuuCWDksbySA0IraQjZJJaGQ7uxyU/D0m8kkkICUGhEDRySSTEcKGWpJJABqrmGHHiupIGJ7jqUsfCEkkxM41JJJAH//Z" target="_blank">Jala burger - Source</a>
+        </div>
+
+
+
+        <div class="referenceinfo">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Funlabeled-bottle-of-red-wine&psig=AOvVaw2zvlaqnF3OLW358fWQDznc&ust=1738113729461000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjbutSsoJeLAxWmbDABHWQbCmQQjRx6BAgAEBk" target="_blank">Wine - Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Funlabeled-bottle-of-red-wine&psig=AOvVaw2zvlaqnF3OLW358fWQDznc&ust=1738113729461000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjbutSsoJeLAxWmbDABHWQbCmQQjRx6BAgAEBk" target="_blank">Soda - Source</a>
+        </div>
+
+<div class="referenceinfo">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfAKDi5BlV_4B3jD8UBd4q0W4rt8MwUul0Ww&s" target="_blank">Sticky Toffee Pudding- Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=uncopyrighted%20fruit%20smoothie&imgurl=https%3A%2F%2Fimages.rawpixel.com%2Fimage_png_800%2FcHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L3BmLW1jMTEtYWtlMDM1MTctY2hpbS1qb2IxODMyLnBuZw.png&imgrefurl=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Ffruit%2520smoothie&docid=eANQ0JQ-aCbVyM&tbnid=-lWpvjjop47NjM&vet=12ahUKEwiduI2qkJaLAxUb5skDHY-9AvkQM3oECFcQAA..i&w=800&h=1120&hcb=2&ved=2ahUKEwiduI2qkJaLAxUb5skDHY-9AvkQM3oECFcQAA" target="_blank">Fruit smoothie - Source</a>
+        </div>
+<div class="referenceinfo">
+            <a href="https://www.google.com/imgres?q=fruit%20sorbet%20licensed%20image&imgurl=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F08%2F93%2F88%2F22%2F360_F_893882231_CXCOU4RoPXcDokq60YbLUrcdCVbIh6qg.jpg&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dsorbet&docid=RUBn2Dz1xgHZbM&tbnid=mztu4g4ktDtOxM&vet=12ahUKEwj6oPrck5eLAxXrGtAFHVy2K4wQM3oECGUQAA..i&w=540&h=360&hcb=2&ved=2ahUKEwj6oPrck5eLAxXrGtAFHVy2K4wQM3oECGUQAA" target="_blank">Fruit sorbet- Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=uncopyrighted%20lemon%20bread&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F919352266%2Fphoto%2Flemon-pound-cake.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3D49siFatrIDG5pcAAF6Qds1lx3aKL74DDjgcHiFWt3oI%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Flemon-cake&docid=t4mMfrrMLmOuWM&tbnid=oUOCRCVZYTNmbM&vet=12ahUKEwiM08zzkJaLAxVo78kDHR1TKbsQM3oECGEQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwiM08zzkJaLAxVo78kDHR1TKbsQM3oECGEQAA" target="_blank">Lemon bread - Source</a>
+        </div>
+<div class="referenceinfo">
+            <a href="https://www.google.com/imgres?q=free%20uncopyrighted%20sticy%20toffe%20cake&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fsticky-toffee-pudding-moist-sponge-260nw-2535541263.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fsticky-pudding&docid=8pwKE2V6YgH-9M&tbnid=tDabJ1eav-XGbM&vet=12ahUKEwibgtSUlJaLAxU-LtAFHZmjIacQM3oECGAQAA..i&w=463&h=280&hcb=2&ved=2ahUKEwibgtSUlJaLAxU-LtAFHZmjIacQM3oECGAQAA" target="_blank">Sticky Toffee Pudding- Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=free%20uncopyrighted%20vegetarian%20chili%20image&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F486539406%2Fphoto%2Fhomemade-organic-vegetarian-chili.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DSjhEpH2cRCRl3ITHsvBdrxXHA0gngZBvMrfVPGuT2fQ%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fvegetarian-chilli&docid=j9XJVbD6-KQP3M&tbnid=1Wdp91yxFM717M&vet=12ahUKEwi-vK_-k5aLAxWoG9AFHTl9NeQQM3oECBwQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwi-vK_-k5aLAxWoG9AFHTl9NeQQM3oECBwQAA" target="_blank">Classic vege chili - Source</a>
+        </div>
+
+		<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=uncopyrighted%20vegetarian%20pizza&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F842082336%2Fphoto%2Fhomemade-veggie-pizza-with-mushrooms-peppers.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3Dop1vZnGjlB_c3w6Z-ohPo0wn4QveujVKZu4vTZCOWnc%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fvegetarian-pizza&docid=4rMjUTvAmypgCM&tbnid=BQKgkuT-0fCRnM&vet=12ahUKEwio8ZC2kZaLAxXBL9AFHdSHAwwQM3oECGwQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwio8ZC2kZaLAxXBL9AFHdSHAwwQM3oECGwQAA" target="_blank">Vege Pizza - Source</a>
+        </div>
+<div class="referenceinfo">
+            <a href="https://www.google.com/imgres?q=uncopyrighted%20tofu%20and%20vegetable%20stir%20fry&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Ftofu-stirfry-mixed-vegetables-arranged-260nw-2505328795.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Ftofu-vegetable-stir-fry&docid=Etpg_vd8cEj0EM&tbnid=yVDtTeq8s5N8MM&vet=12ahUKEwi1nMPxkZaLAxUSSDABHQLMKJ4QM3oECG4QAA..i&w=368&h=280&hcb=2&ved=2ahUKEwi1nMPxkZaLAxUSSDABHQLMKJ4QM3oECG4QAA" target="_blank">Tofu - Source</a>
+        </div>
+		
+		<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=image%20of%20non%20copyright%20%C2%A0zucchini%20noodles%20licensable&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F046%2F934%2F244%2Fnon_2x%2Fzucchini-noodles-on-transparent-background-free-png.png&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Fpng%2F46934244-zucchini-noodles-on-transparent-background&docid=j32SnmQCTOs0CM&tbnid=0-v0MzkSfURijM&vet=12ahUKEwjg37OTkJeLAxXp4MkDHeNsDWEQM3oECHoQAA..i&w=980&h=980&hcb=2&ved=2ahUKEwjg37OTkJeLAxXp4MkDHeNsDWEQM3oECHoQAA" target="_blank">Zucchhini noodles - Source</a>
+        </div>
+
+		<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=free%20uncopyrighted%20chickpea%20and%20spinach%20curry%20image&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fspicy-chickpea-spinach-curry-african-600nw-2160489123.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fchickpeas-spinach-stew&docid=vU2MIyNBuGqrRM&tbnid=VUpMXWYD7BKSBM&vet=12ahUKEwjn_6vak5aLAxWMGtAFHVNPFn8QM3oECBkQAA..i&w=600&h=400&hcb=2&itg=1&ved=2ahUKEwjn_6vak5aLAxWMGtAFHVNPFn8QM3oECBkQAA" target="_blank">Chick pea - Source</a>
+</div>
+
+<div class="referenceinfo">
+   <a href="https://wickedkitchen.com/wp-content/uploads/2020/12/Untitled-1-2.jpg" target="_blank">Moroccan Vegan Balls - Source</a>
+        </div>
+
+	<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=cutting%20fresh%20vegetables%20copyright%20free%20image&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F480391926%2Fphoto%2Fchopping-food-ingredients.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DgNaK4pSwkZIW1h4BKQEuGhXRJgbjbdtgmlFF_Bu4uYI%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fcut-vegetables&docid=6JUu1LWJ3WavrM&tbnid=D27gs7n9DqpZiM&vet=12ahUKEwjU85Xa3paLAxWZRjABHdHdA6IQM3oECBUQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwjU85Xa3paLAxWZRjABHdHdA6IQM3oECBUQAA" target="_blank">Cutting vegetables - Source</a>
+</div>
+
+<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=cutting%20vegetables%20no%20copyright&imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1493882946517-213a21fe70f8%3Ffm%3Djpg%26q%3D60%26w%3D3000%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0dGluZyUyMHZlZ2V0YWJsZXN8ZW58MHx8MHx8fDA%253D&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcutting-vegetables&docid=bvppJLtLtwUKkM&tbnid=DSgJhBzH-l3jNM&vet=12ahUKEwi2677lpJeLAxWXGtAFHfcLCX8QM3oECF4QAA..i&w=3000&h=2000&hcb=2&ved=2ahUKEwi2677lpJeLAxWXGtAFHfcLCX8QM3oECF4QAA" target="_blank">Cutting vegetables 2 - Source</a>
+        </div>
+
+      
+	<div class="referenceinfo">
+   <a href="https://media.istockphoto.com/id/1363571533/photo/open-soybean-field-at-sunset.jpg?s=612x612&w=0&k=20&c=TEw_oBj-8R8Ycd-bpHnUNMtQwvxt1vK5CYcpP1hMiTU=" target="_blank">soy bean field - Source</a>
+</div>
+
+<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=composting%20image%20non%20copyright&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fthumbnails%2F049%2F727%2F011%2Fsmall%2Fup-close-of-a-community-gardens-compost-pile-repurposing-food-waste-for-biogas-photo.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fcompost-pile&docid=OhKyo2RSkbF8UM&tbnid=5N9PPT8coGs1lM&vet=12ahUKEwj02NfnhZeLAxU0STABHXsoGHsQM3oECHoQAA..i&w=357&h=200&hcb=2&ved=2ahUKEwj02NfnhZeLAxU0STABHXsoGHsQM3oECHoQAA" target="_blank">Compost - Source</a>
+        </div>
+
+      
+	<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=biodegradable%20containers%20non%20copyright%20image&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1411289606%2Fphoto%2Fpaper-eco-friendly-disposable-tableware-with-recycling-signs-on-the-background-of-green-plants.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3Dng731oZuBvrja5tNFkrcW-hWtWJqieyxw3A2HSei0QI%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fbiodegradable-packaging&docid=5tVd2MsvZq0XjM&tbnid=bKebj2WeLg29uM&vet=12ahUKEwjX-_S9hpeLAxXXLtAFHa5bEy0QM3oECBcQAA..i&w=612&h=382&hcb=2&ved=2ahUKEwjX-_S9hpeLAxXXLtAFHa5bEy0QM3oECBcQAA" target="_blank">Container - Source</a>
+</div>
+
+<div class="referenceinfo">
+   <a href="https://media.istockphoto.com/id/1160205101/photo/making-compost-from-vegetable-leftovers.jpg?s=612x612&w=0&k=20&c=YmrOFC2por-Anbvsbzj-JuCuygsFALvjO0nN2SL0KQw="_blank">Reusing vegetables - Source</a>
+        </div>
+<div class="referenceinfo">
+   <a href="https://www.google.com/imgres?q=oil%20in%20beakers%20non%20copyright%20images&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F677711042%2Fphoto%2Foil-pouring-equipment-and-science-experiments-formulating-the-chemical-for-medicine-organic.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3D1KlfQxzsWWLOoyVPnDmT8YzBR-gh6jjysgpzE7-nfXs%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Foil-beaker&docid=Vj3qmoYtsOGLaM&tbnid=CpodUv36ywYgNM&vet=12ahUKEwjFktr2jZeLAxUXTTABHSdBFNUQM3oECHsQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwjFktr2jZeLAxUXTTABHSdBFNUQM3oECHsQAA"target="_blank">Reusing vegetables - Source</a>
+        </div>
+ <div class="referenceinfo">
+   <a href="https://www.sciencedirect.com/science/article/pii/S0002916523048992#:~:text=CONCLUSIONS,render%20the%20food%20system%20unsustainable."target="_blank">Sustanibilty article - Source</a>
+        </div>     
+       <div class="referenceinfo">
+   <a href="https://www.webstaurantstore.com/blog/4366/vegan-menu-ideas-for-your-restaurant.html?srsltid=AfmBOopq_eXJx6WSj-4kgFlfwsZFUGiocoi3c28ZFAt821to_lu3HOPq
+"target="_blank">Menu article - Source</a>
+        </div> 
+<div class="referenceinfo">
+   <a href="https://www.nhsinform.scot/healthy-living/food-and-nutrition/special-diets/vegetarian-and-vegan-diets/"
+"target="_blank">Vegetarian Information - Source</a>
+        </div> 
+
+</div>
+
 
 
    
