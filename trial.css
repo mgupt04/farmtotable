@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #fae8e0; /* Adjusted to match your image */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Content */
+.container {
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Styling */
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.title {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 10px 0;
+	color: white;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+/* Buy Theme Button */
+.buy-theme {
+    background-color: white;
+    border: 2px solid black;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.buy-theme:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Side Buttons */
+.side-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Related and Buy Now Buttons */
+.related-btn, .buy-now {
+    background-color: #e41e41;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    width: 140px;
+    text-align: left;
+}
+
+.buy-now {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.related-btn:hover, .buy-now:hover {
+    opacity: 0.8;
+}
