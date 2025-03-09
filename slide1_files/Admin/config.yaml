@@ -10,6 +10,6 @@ collections:
   - name: "messages"
     label: "Messages"
     folder: "content"
-    create: false
+    create: true
     fields:
       - { label: "Message", name: "message", widget: "string" }
