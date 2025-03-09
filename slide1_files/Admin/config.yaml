@@ -3,13 +3,14 @@ backend:
   repo: mgupt04/farmtotable
   branch: main
 
-media_folder: "static/images"
+
+media_folder: "slide1_files"
 public_folder: "/images"
 
 collections:
   - name: "messages"
     label: "Messages"
-    folder: "content"
+    folder: "slide1_files"
     create: true
     fields:
       - { label: "Message", name: "message", widget: "string" }
