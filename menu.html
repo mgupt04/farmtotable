@@ -391,6 +391,64 @@ body {
   </div>
 </footer>
 
+
+
+
+<button id="OURBOT">?</button>
+
+<div id="bot">
+    <div id="header">Quick questions</div>
+    <div id="messages"></div>
+    <div id="options"></div>
+</div>
+
+<script>
+    const answers = {
+        "Restaurant hours": "The restaurant is open from 09:00 am to 09:00 pm.",
+        "Special of the day": "Today's special is Stuffed Bell Peppers for $24.00 or Hearty Vegetable Curry for $16.00.",
+        "Menu": "Our menu includes vegan dishes like Vegan Chilli, Vegan Pizza, Vegan Chopped Salad, and desserts like Sticky Toffee Pudding. We offer a variety of vegan and vegetarian dishes made from locally sourced ingredients. Would you like to know more about a specific dish?",
+        "Dine with you": "We offer farm freshness, chef-curated dishes, and sustainability practices that make each meal eco-friendly.",
+        "Sustainable ingredients": "Yes, we partner with local farms to bring you the freshest, most sustainable ingredients.",
+        "Vegan options": "Yes, we have a variety of vegan options like Vegan Chilli, Vegan Pizza, and more.",
+        "Eco-friendly packaging": "Yes, we use 100% eco-friendly packaging and follow a zero-waste kitchen policy.",
+        "Awards": "We have won several awards for sustainability and excellent food quality, including the Green Restaurant Award and Best Vegan Dish of the Year. We are proud of our commitment to both delicious food and environmental responsibility."
+    };
+
+    function addMessage(message, sender) {
+        const messageElement = document.createElement('div');
+        messageElement.className = sender;
+        messageElement.textContent = message;
+        document.getElementById('messages').appendChild(messageElement);
+        document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+    }
+
+    function createOptions() {
+        const optionsContainer = document.getElementById('options');
+        optionsContainer.innerHTML = ""; 
+        Object.keys(answers).forEach(question => {
+            const button = document.createElement('button');
+            button.textContent = question;
+            button.className = "question";
+            button.onclick = function() {
+                addMessage(question, 'user');
+                setTimeout(() => addMessage(answers[question], 'bot'), 500);
+            };
+            optionsContainer.appendChild(button);
+        });
+    }
+
+    document.getElementById('OURBOT').addEventListener('click', function() {
+        const bot = document.getElementById('bot');
+        if (bot.style.display === "none" || bot.style.display === "") {
+            bot.style.display = "flex";
+        } else {
+            bot.style.display = "none";
+        }
+    });
+
+    createOptions();
+</script>
+
 </body>
 </html>
 
