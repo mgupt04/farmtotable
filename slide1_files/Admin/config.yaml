@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: mgupt04/farmtotable
+  branch: main
+
+
+media_folder: "slide1_files/images"
+public_folder: "/images"
+
+collections:
+  - name: "messages"
+    label: "Messages"
+    folder: "slide1_files"
+    create: false
+    fields:
+      - { label: "Message", name: "message", widget: "string" }
