@@ -3,14 +3,20 @@ backend:
   repo: mgupt04/farmtotable
   branch: main
 
-
-media_folder: "slide1_files/images"
-public_folder: "/images"
+media_folder: "slide1_files/images"  # Folder for media files (if any)
+public_folder: "/images"  # URL path to access media
 
 collections:
-  - name: "messages"
-    label: "Messages"
-    folder: "slide1_files"
-    create: false
-    fields:
-      - { label: "Message", name: "message", widget: "string" }
+  - name: "content"  # Collection name
+    label: "Content"  # Label for the collection
+    folder: "slide1_files"  # Path to the folder where the content will be stored
+    create: false  # Whether new files can be created or not
+    files:
+      - name: "content"  # Name of the file
+        label: "Content"  # Label displayed in the CMS
+        file: "content.json"  # Path to the content file (relative to the folder)
+        fields:
+          - label: "Message"  # Field label
+            name: "message"  # Field name used in the content file
+            widget: "string"  # Field type (string in this case)
+            required: true  # Make it a required field
