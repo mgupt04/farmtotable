@@ -3,13 +3,13 @@ backend:
   repo: mgupt04/farmtotable
   branch: main
 
-media_folder: "slide1_files/images"  # Folder for media files (if any)
+media_folder: "images"  # Folder for media files (if any)
 public_folder: "/images"  # URL path to access media
 
 collections:
   - name: "content"  # Collection name
     label: "Content"  # Label for the collection
-    folder: "slide1_files"  # Path to the folder where the content will be stored
+    folder: "/"  # Path to the folder where the content will be stored
     create: false  # Whether new files can be created or not
     files:
       - name: "content"  # Name of the file
